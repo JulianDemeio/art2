@@ -1,0 +1,73 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{fibrazioniHP}
+Bary-Soroker, L., Fehm, A., Petersen, S.: On varieties of {H}ilbert type.
+\newblock Ann. Inst. Fourier (Grenoble) \textbf{64}(5), 1893--1901 (2014)
+
+\bibitem{Bogomolov}
+Bogomolov, F.A.: The brauer group of quotient spaces by linear group actions.
+\newblock Mathematics of the USSR-Izvestiya \textbf{30}(3), 455 (1988).
+\newblock \urlprefix\url{http://stacks.iop.org/0025-5726/30/i=3/a=A02}
+
+\bibitem{congetturastrong}
+Colliot-Th\'el\`ene, J.L.: Points rationnels sur les fibrations.
+\newblock In: Higher dimensional varieties and rational points ({B}udapest,
+  2001), \emph{Bolyai Soc. Math. Stud.}, vol.~12, pp. 171--221. Springer,
+  Berlin (2003)
+
+\bibitem{articoloHP}
+Corvaja, P., Zannier, U.: On the hilbert property and the fundamental group of
+  algebraic varieties.
+\newblock Mathematische Zeitschrift pp. 1--24 (2016)
+
+\bibitem{Lenstra}
+Lenstra Jr., H.W.: Rational functions invariant under a finite abelian group.
+\newblock Invent. Math. \textbf{25}, 299--325 (1974)
+
+\bibitem{articoloV}
+Logan, A., McKinnon, D., van Luijk, R.: Density of rational points on diagonal
+  quartic surfaces.
+\newblock Algebra Number Theory \textbf{4}(1), 1--20 (2010)
+
+\bibitem{weakweakabelian}
+Neukirch, J.: Über das einbettungsproblem der algebraischen zahlentheorie.
+\newblock Inventiones mathematicae \textbf{21}, 59--116 (1973)
+
+\bibitem{weakweaksolvable}
+Neukirch, J.: On solvable number fields.
+\newblock Inventiones mathematicae \textbf{53}, 135--164 (1979)
+
+\bibitem{Neukirchnovo}
+Neukirch, J., Schmidt, A., Wingberg, K.: Cohomology of Number Fields.
+\newblock Grundlehren der mathematischen Wissenschaften. Springer Berlin
+  Heidelberg (2016)
+
+\bibitem{Saltman}
+Saltman, D.J.: Noether's problem over an algebraically closed field.
+\newblock Invent. Math. \textbf{77}(1), 71--84 (1984)
+
+\bibitem{twist}
+Serre, J.P.: Cohomologie galoisienne, \emph{Lecture Notes in Mathematics},
+  vol.~5, fifth edn.
+\newblock Springer-Verlag, Berlin (1994)
+
+\bibitem{Serre}
+Serre, J.P.: Topics in {G}alois theory, \emph{Research Notes in Mathematics},
+  vol.~1, second edn.
+\newblock A K Peters, Ltd., MA (2008)
+
+\bibitem{stacks-project}
+{Stacks Project Authors}, T.: \itshape stacks project.
+\newblock \url{http://stacks.math.columbia.edu} (2017)
+
+\bibitem{Swan}
+Swan, R.G.: Invariant rational functions and a problem of {S}teenrod.
+\newblock Invent. Math. \textbf{7}, 148--158 (1969)
+
+\end{thebibliography}

@@ -1,0 +1,53 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{fibrazioniHP}
+Bary-Soroker, L., Fehm, A., Petersen, S.: On varieties of {H}ilbert type.
+\newblock Ann. Inst. Fourier (Grenoble) \textbf{64}(5), 1893--1901 (2014)
+
+\bibitem{nonrationalcubics}
+Clemens, C.H., Griffiths, P.A.: The intermediate {J}acobian of the cubic
+  threefold.
+\newblock Ann. of Math. (2) \textbf{95}, 281--356 (1972)
+
+\bibitem{congetturastrong}
+Colliot-Th\'el\`ene, J.L.: Points rationnels sur les fibrations.
+\newblock In: Higher dimensional varieties and rational points ({B}udapest,
+  2001), \emph{Bolyai Soc. Math. Stud.}, vol.~12, pp. 171--221. Springer,
+  Berlin (2003)
+
+\bibitem{articoloHP}
+Corvaja, P., Zannier, U.: On the hilbert property and the fundamental group of
+  algebraic varieties.
+\newblock Mathematische Zeitschrift pp. 1--24 (2016)
+
+\bibitem{myarticle1}
+{Demeio}, J.L.: {Non-rational varieties with the Hilbert Property}.
+\newblock ArXiv e-prints  (2018)
+
+\bibitem{garbagnati}
+{Garbagnati}, A., {Salgado}, C.: {Linear systems on rational elliptic surfaces
+  and elliptic fibrations on K3 surfaces}.
+\newblock ArXiv e-prints  (2017)
+
+\bibitem{hartshorne}
+Hartshorne, R.: Algebraic geometry.
+\newblock Springer-Verlag, New York (1977).
+\newblock Graduate Texts in Mathematics, No. 52
+
+\bibitem{unirationalcubics}
+Kollár, J.: Unirationality of cubic hypersurfaces.
+\newblock Journal of the Institute of Mathematics of Jussieu \textbf{1}(3),
+  467–476 (2002)
+
+\bibitem{Serre}
+Serre, J.P.: Topics in {G}alois theory, \emph{Research Notes in Mathematics},
+  vol.~1, second edn.
+\newblock A K Peters, Ltd., MA (2008)
+
+\end{thebibliography}

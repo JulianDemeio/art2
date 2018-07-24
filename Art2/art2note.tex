@@ -1,0 +1,276 @@
+
+
+We start by recalling the main definitions and some basic facts regarding this property. For a treatment of the basic theory we refer to \cite{Serre}.
+
+\begin{definition}
+	Let $X$ be a variety over a field $k$. We say that $S \subset X(k)$ is \emph{thin} if it is contained in a finite union of sets of two types:
+	\begin{itemize}
+		\item[(A)] $Z(k)\subset X(k)$, where $Z \subset X$ is a closed proper subvariety;
+		\item[(B)] $\pi(E(k)) \subset X(k)$, where $\pi:E \longrightarrow X$ is an irreducible non-trivial cover of $X$, by which we mean that $E$ is an irreducible variety and $\pi$ is a dominant generically finite morphism, with $\deg \pi>1$.
+	\end{itemize}
+\end{definition}
+\begin{definition}
+	We say that a variety $X/k$ is of Hilbert type, or has the Hilbert Property, if $X(k)$ is not thin.
+\end{definition}
+In the sequel we will use the abbreviation HP to denote the Hilbert Property.
+
+The classical theorem of Hilbert can be reformulated by saying that, if $k$ is a number field, then $\A_n/k$ has the Hilbert Property. If, over the field $k$, there exists a variety with the Hilbert Property, then $k$ is said to be Hilbertian. In this case it can be shown that $\A_n/k$ has the Hilbert Property for any $n \geq 1$.
+
+Motivation for the study of the HP comes from the following conjecture, of which a proof would settle the Inverse Galois Problem (as noted in \cite{congetturastrong}):
+\begin{conjecture}[Colliot-Thélène, Sansuc]\label{congetturona}
+	Let $X/k$ be a unirational variety over a number field, then $X$ has the HP.
+\end{conjecture}
+
+The first result of this paper is the following theorem:
+
+\begin{theorem}
+	contenuto...
+\end{theorem}
+
+In the second section we recollect, for convenience of the reader, some known facts, that we are going to use in later sections. In particular, we recollect here some of the recent developments about the study of the Hilbert Property.
+
+In Section 3 we prove the following:
+\begin{theorem}\label{cubiche}
+	Let $X\subset \P_n/K$, $n \geq 3$ be a smooth cubic hypersurface, with a $K$-rational point. Then $X$ has the Hilbert Property.
+\end{theorem}
+
+The proof will rely on the abudance of elliptic curves contained in cubic hypersurfaces.
+Since smooth cubic hypersurfaces with one $K$-rational point are known to be unirational (see \cite{unirationalcubics}), Theorem \ref{cubiche} gives a (family of) positive example(s) to Conjecture \ref{congetturona}. We remind the reader that cubic hypersurfaces in $\P_n$ are in general not rational varieties (see \cite{nonrationalcubics}), for which the Hilbert Property is a standard consequence of Hilbert's Irreducibility Theorem.
+
+
+In Section 4 we prove the following:
+\begin{theorem}\label{K3surfaces}
+	Let $\Eps/K$ be a smooth simply connected\footnote{By simply connected, we mean that $E$ is simply connected as a variety over $\C$. This implies that there does not exist any étale finite map $\phi:E' \rightarrow E$, with $E'$ geometrically irreducible, and $\deg \phi >1$.} algebraic surface, with two elliptic fibrations $\pi_1,\pi_2:\Eps \rightarrow \P_1$, such that the morphism $(\pi_1,\pi_2):\Eps \rightarrow \P_1 \times \P_1$ is finite. Assume that the $K$-rational points of $\Eps$ are Zariski-dense, and that the following condition holds:
+	\begin{itemize}\label{genericramificationtheorem}
+		\item Denote by $E_{1,\lambda_0}$ the generic fiber of $\pi_1:\Eps \rightarrow \P_1/K$, and $K(\lambda)$ the field of rational functions of the codomain of $\pi_1$. Take $\pi_{2,0}:E_{1,\lambda_0}\longrightarrow \P_1/{K(\lambda)}$ to be the restriction of $\pi_2$ to $E_{1,\lambda_0}$. Then there is at most one constant	 \footnote{If $[p:q]\in \P_1(\overline{K(\lambda)})$, we say that it is \emph{non-constant} if $q \neq 0$, and $\frac{p}{q} \in \overline{K(\lambda)}$ is a non-constant algebraic function in $\lambda$. We say that it is \emph{constant} otherwise.} (in $\lambda$) diramation point of $\pi_{2,0}$ (viewed as point in $\P_1(\overline{{K(\lambda)}})$), and the same holds inverting $\pi_1$ and $\pi_2$.
+		%Then all the diramation points of $\pi_{2,0}$ (viewed as elements of $\P_1(\overline{K(\lambda)})$
+		
+		%) are non-constant in $\lambda$, and the same holds inverting $\pi_1$ and $\pi_2$;
+	\end{itemize}
+	Then $\Eps$ has the Hilbert Property.
+\end{theorem}
+
+Theorem \ref{K3surfaces} is a generalization of results presented in \cite{articoloHP}, where it is proven for the Fermat quartic and \cite{myarticle1}, where it is proven for some diagonal quartic surfaces defined over $\Q$. 
+
+
+In the last section we present a family of examples of K3 surfaces, for which the Hilbert Property is proven using Theorem \ref{K3surfaces}. This family, introduced in \cite{garbagnati}, is constructed in such a way that it is naturally endowed with multiple elliptic fibrations. We will note moreover that, in this family of surfaces, we recover some Kummer surfaces for which the Hilbert Property has been suggested to be true in \cite{articoloHP}.
+
+
+
+
+\subsection{Ramification}	
+	
+	In this work, we are going to need some facts about ramification of a finite morphism $f:X \rightarrow Y$. In particular, we will be interested in what happens at ramification under base change $f_Z:X \times_YZ \rightarrow Z$. We are going now to briefly recap the basic definitions and facts which we are going to need, omitting the proofs (for a reference see e.g. \cite[Tag 0C3H]{stacks-project}).
+
+\begin{definition}
+	We say that the map $f:X \rightarrow Y$ is unramified (resp. étale) in $x \in X$, if its differential $df_x:T_xX\rightarrow T_{f(x)}Y$ is injective (resp. an isomorphism). Otherwise we say that $f$ is ramified at $x$.
+\end{definition}
+The set of points where $f$ is unramified has a closed subscheme structure in $X$. We give hence the following definition:
+\begin{definition}\label{ramif}
+	Let $f:X \rightarrow Y$ be a finite morphism of schemes. The ramification locus $R_f$ is the reduced closed subscheme of $X$, whose points are the points where $f$ is unramified.
+\end{definition}
+
+	\begin{definition}\label{dira}
+	Let $f:X \rightarrow Y$ be a finite morphism of schemes. The diramation (or branch) locus of $f$ is the closed reduced subscheme $D_f=f(R_f)$, the image of $R_f$ under $f$.
+\end{definition}
+
+\begin{remark}\label{Zariski}
+	Keeping the notation of Definition \ref{dira}, we recall that, when $Y$ is smooth and $X$ is normal, the diramation locus of $f$ is of pure codimension $1$, by Zariski's Purity Theorem. In this case, it makes sense to talk about the diramation divisor.
+\end{remark}
+
+\begin{proposition}\label{ramification}
+	Let $f:X \rightarrow Y$ be a finite morphism of schemes. Let $\phi: Z \rightarrow Y$ be a morphism, and consider the base changed map $f_Z:X_Z\rightarrow Z$ (here $X_Z$ denotes the base change $X\times_Y Z$, and $f_Z$ denotes the projection to the second factor).
+	Then the diramation locus $D_{f_Z}$ of $f_Z$ is $D_f \times_Y Z$.
+\end{proposition}
+
+
+\subsection{Relative Normalization}
+
+\begin{theorem}\label{Steinfactorization}
+	Let $k$ be a field of characteristic $0$, and $\psi:Y \rightarrow S$ a dominant morphism of normal $k$-varieties. Then there exists a 
+	%nonempty open subscheme $U \subset S$, a $K$-variety $T$ and a 
+	factorization:
+\[
+\psi:Y\xrightarrow{g} T \xrightarrow{r} S
+\]
+of $\psi$ such that the generic fiber of $g$ is geometrically integral, $r$ is finite and $T$ is normal.
+\end{theorem}
+\begin{proof}
+	Let
+	\[
+	\psi:Y\xrightarrow{g} T \xrightarrow{r} S
+	\] 
+	be the factorization of $\psi$, such that $T$ is the relative normalization of $S$ in $Y$ (see \cite[Tag 035H]{stacks-project}). Then $T$ is normal (see \cite[Tag 035L]{stacks-project}), $r$ is finite (see \cite[Tag 0AVK]{stacks-project}), and $g$ is dominant. Moreover, since $Y$ is normal, the normalization of $S$ in $Y$ coincides with the normalization of $S$ in the generic point of $Y$, which we denote by $\xi_Y$. Let now $\xi_Y \cong \Spec L(V)$, where $L/k$ denotes the algebraic closure of $K$ in the function field of $Y$, and $L(V)/L$ is a transcendental field extension. Then, the morphism $\xi_Y\rightarrow S$ factors through $\Spec L \rightarrow S$. Since $L$ is algebraically closed in $L(V)$, this implies that the normalization $T$ of $S$ in $Y$ coincides with the normalization of $S$ in $\Spec L$. Hence, since the field extension $L/k$ is finite, the function field of $T$ is $L$. Whence, the morphism $g:Y \rightarrow T$ is a dominant morphism between integral varieties such that $g^*k(T)$ is algebraically closed in the function field $k(Y)$ of $Y$, where $k(T)$ denotes the function field of $T$. Hence $g$ has geometrically irreducible geometric generic fiber\footnote{This last fact is a direct consequence of the fact that, if $\Char k = 0$ and $L/k$ is a finite field extension, and $F/k$ is a field extension such that $k$ is algebraically closed in $F$, then $F \otimes_k L$ is a field.}.
+\end{proof}
+
+
+%\subsection{Bertini type results}
+%
+%\begin{theorem}\label{Bertini}
+%	Let $X/k$ be a smooth projective variety, and let $\delta$ be a linear system on $X$, with base locus $\Sigma$, then almost every element of $\delta$, considered as a closed subscheme of $X$, is nonsingular outside $\Sigma$.
+%\end{theorem}
+%\begin{proof}
+%	See \cite[Remark 10.9.2]{hartshorne}.
+%\end{proof}
+%
+%\begin{theorem}\label{genericsmoothness}
+%	Assume that the base field $k$ has characteristic $0$. Let $f:X \rightarrow Y$ be a morphism between smooth projective varieties. Then $f$ is generically smooth.
+%\end{theorem}
+%\begin{proof}
+%	See \cite[Corollary 10.7]{hartshorne}.
+%\end{proof}
+%
+
+\section{Relative Picard scheme}
+
+In this section we recall the definition and some of the basic properties of the relative Picard scheme, since we are going to use this object in the later sections. The definition itself is rather abstract, so we suggest the reader who is just interested in reading the remainder of this paper, to focus on the properties (which are, instead, quite less abstract) that we are going to use. We refer to \cite{kleiman} for the proofs of this section.
+
+\begin{definition}\label{relativepicard}
+	Let $f:X \rightarrow S$ be an $S$-scheme. The relative Picard functor is defined as follows:
+	\begin{align*}
+		\Pic_{X/S}: \Sch_S^{op} &\longrightarrow \Set \\
+		T &\longmapsto \faktor{\Pic(X_T)}{f^*\Pic(T)}.
+	\end{align*}
+	If the $fppf$-sheafification \footnote{For the $fppf$ topology we refer to \cite[Tag 021L]{stacks-project}. For our purposes, however, it will be sufficient to know that, on the closed points $s \in S$, of residual characteristic $0$, the $fppf$-sheafification concides with the Galois sheafification. I.e., if $s \in S, \ s \cong \Spec k(s)$ is a closed point of $S$, $\Spec \overline{k(s)} \cong \overline{s} \rightarrow s \hookrightarrow S$ is its corresponding geometric point, and $\Gamma_s=\Gal (\overline{k(s)}/k(s))$, then:
+	\[
+	\Pic^{fppf}_{X/S}(s)=\{L \in \Pic(X_{\overline{s}}) | \  L^g=L \  \forall g \in \Gamma_s\}.
+	\]
+} of this functor is representable, we denote by $\Pic_{X/S}$ the scheme that represents it, and call it the relative Picard scheme of $f:X\rightarrow S$.
+\end{definition}
+
+We note that, by definition, the relative Picard scheme is an abelian $S$-group scheme. We recall that an $S$-group scheme $G \rightarrow S$ is an (abelian) group scheme if the following morphisms exist (as morphisms of $S$-schemes, i.e. they have to commute with the natural projection to $S$):
+\begin{enumerate}
+	\item A sum morphism $+:G \times_S G \rightarrow G$;
+	\item A $0$-section $\sigma_0:S \rightarrow G$;
+	\item An opposite morphism $-:G \rightarrow G$.
+\end{enumerate}
+and satisfy the usual (abelian) group conditions.
+
+
+\begin{notation}\label{notationsum}
+	Let $X$ and $T$ be $S$-schemes, and let $f_1,f_2:T \rightarrow \Pic_{X/S}$ be morphisms of $S$-schemes. We denote then by $f_1\pm f_2$ the sum/difference of these two morphisms, defined using the structure of $S$-group scheme of $\Pic_{X/S}$.
+\end{notation}
+
+
+\begin{remark}\label{fiberwise}
+	By construction, for each scheme-theoretic closed point $s$ of $S$, we have that $\Pic_{X/S}(s)=P^{-1}(s)$ is the usual Picard scheme of the fiber $X_s$, where $P:\Pic_{X/S}\rightarrow S$ denotes the structural morphism of $\Pic_{X/S}$. The operations defined in \ref{notationsum} on $\Pic_{X/S}$ are compatible with reducing to the $s$-fiber (since they are $S$-morphisms).
+\end{remark}
+
+\begin{proposition}\label{smoothrelativedimension1}
+	Let $X$ and $S$ be (smooth) $k$-varieties and let $f:X \rightarrow S$ be a dominant, smooth morphism of relative dimension $1$. Assume that the relative Picard scheme $\Pic_{X/S}$ exists (i.e. the $fppf$-sheafification of the relative Picard functor is representable), and denote by $P:\Pic_{X/S} \rightarrow S$ its structural morphism. Then one has the following short exact sequence of $S$-group schemes:
+	\begin{equation}\label{SES}
+		0 \rightarrow \Pic^0_{X/S} \rightarrow \Pic_{X/S} \rightarrow \Z \rightarrow 0,
+	\end{equation}
+	where $\Pic^0_{X/S}$ is a (smooth) irreducible $S$-group scheme, and denotes the (scheme representing the $fppf$-sheafification) of the divisors of relative degree $0$.
+\end{proposition}
+
+We note that, as \ref{SES} is a short exact sequence of $S$-group schemes, it is compatible with reduction to the fibers. Keeping the notation of \ref{smoothrelativedimension1}, and denoting by $P:\Pic_{X/S} \rightarrow S$ the structural morphism, we have hence that \ref{SES} induces short exact sequences:
+\begin{equation}\label{SESreduced}
+	0 \rightarrow \Pic^0_{X_s/s} \rightarrow \Pic_{X_s/s}=P^{-1}(s) \rightarrow \Z \rightarrow 0,
+\end{equation}
+for each closed point $s$ of $S$.
+
+
+\begin{theorem}\label{genericrepr}
+	Let $f:X \rightarrow S$ be a morphism between $k$-varieties. Assume that $S$ is integral, then there exists an open subset $V \subset S$ such that the relative Picard scheme $\Pic_{X_V/V}$ exists, and $\Pic_{X_V/V}\rightarrow V$ is locally of finite presentation.
+\end{theorem}
+
+\begin{corollary}\label{divisorgeneric}
+	Let $f:X \rightarrow S$ be a morphism between $k$-varieties. Assume that $S$ is integral, and let $\xi$ be the generic point of $S$. Assume that we have a section $H:\xi \rightarrow \Pic_{X_{\xi}/\xi}$ of the structural morphism $\Pic_{X_{\xi}/\xi} \rightarrow \xi$, then it extends to a section $\H:U \rightarrow \Pic_{X_U/U}$ on some open subscheme $U \subset S$.
+\end{corollary}
+
+\begin{proof}
+	This follows immediately from the fact that $\Pic_{X_V/V}\rightarrow V$ is of locally finite presentation, which is guaranteed by Theorem \ref{genericrepr}.
+\end{proof}
+
+\section{avanzidicubiche}
+
+
+\begin{lemma}\label{positivegenericrank}
+	Let $\pi:\Eps \rightarrow \P_1$ be an elliptic fibration. Then there exists an open Zariski subset $U \subset \Eps$ such that, if $P \in U(K)$, $\pi^{-1}(\pi(P))$ is smooth and $\card{\pi^{-1}(\pi(P))(K)}=\infty$. 
+\end{lemma}
+
+\begin{proof}
+	Let $U_1 \subset \P_1$ be an open subscheme such that $\pi$ has good reduction in $U_1$, i.e. for each $t \in U_1$, $E_t\defeq \pi^{-1}(t)$ is a smooth curve of genus $1$. Let $\pi_{U_1}:\Eps_{U_1} \rightarrow U_1$ be the restriction of $\pi$ to $U_1$. By Theorem \ref{genericrepr} we know that there exists a $U_2 \subset U_1$ such that there exists the relative Picard scheme $\Pic_{\Eps_{U_2}/U_2}$. Let $X_{U_2} \defeq \Pic_{\Eps_{U_2}/U_2}$ be the relative Picard scheme of $\Eps_{U_2}\rightarrow U_2$, as defined in \ref{relativepicard}, and let $P_{U_2}:X_{U_2}\rightarrow U_2$ be its structural morphism. 
+	
+	Finally, let $H$ be an ample line bundle of degree $d > 0$ on $E_{\lambda}$, where $\lambda$ denotes the generic point of $\P_1$. By applying Corollary \ref{divisorgeneric}, we know that there exists an open set $U_3\subset U_2$ and a section of $P_{U_3}^d:X_{U_3}^{d} \rightarrow U_3$, which we will denote by $\H:U_3 \rightarrow X_{U_3}^{d}$, where $X_{U_3}^d$ in $\Pic_{\Eps_{U_3}/U_3}$, denotes the inverse image by $\deg:\Pic_{\Eps_{U_3}/U_3} \rightarrow \Z$ (keeping the notation of \ref{smoothrelativedimension1}) of $d$.
+	
+	Let us now denote by $N$ the least common multiple of the orders of torsion of $K$-rational points on all elliptic curves defined over $K$. This number is finite because of Mazur-Merel-Parent Theorem \cite{merel}.
+	
+	We define now the following morphism $f: \Eps_{U_3} \rightarrow X_{U_3}$:
+	\begin{equation}
+	f \defeq N(d\iota - \H \circ \pi),
+	\end{equation}
+	where $\iota: \Eps_{U_3} \hookrightarrow X^1_{U_3} \subset X_{U_3}$ denotes the inclusion (on the closed points this is just the map that associates to each point $P$ the degree $1$ divisor $(P)$), and the operations are the ones defined in \ref{notationsum}. Using the short exact sequence \ref{SES}, we easily see that $\im f \subset X^0_{U_3}$. Moreover, using the short exact sequence \ref{SESreduced}, and the fact that multiplication by $N(d+1)$ on an elliptic curve is a dominant map, we immediately see that $\im f=X^0_{U_3}$.
+	
+	We claim now that the thesis follows by posing $U=\Eps_S\setminus f^{-1}(\im \sigma_0)$, where $\sigma_0$ denotes the $0$-section of $\pi^0:X_S^0 \rightarrow S$, and $S=U_3$. In fact, let $P \in U(K)$, we know that $f(P) \notin \im \sigma_0$. Since the operations used to define $f$ are $S$-morphisms, this is equivalent to saying that $N(dP-H)\neq O$ on $J(E_P)\defeq X^0_{U_3}\cap P^{-1}(\pi(P))$, which in turn implies that $dP-H \in J(E_P)(K)$ is not torsion, hence the Mordell-Weil rank of $J(E_P)/K$ is at least one, and, since $E_P \cong J(E_P)$ (the isomorphism follows from the fact that $E_P$ has a $K$-rational point), the thesis follows.
+\end{proof}
+
+\begin{remark}\label{geometric}
+	%	...=scrivi meglio Keeping the notation of the proof of Lemma \ref{positivegenericrank}, the construction of $U$ depends solely on the places on bad reduction, on the line bundle $H$, and on the number $N$, defined through Merel-Perent's Theorem. In particular, i
+	Keeping the notation of the proof of Lemma \ref{positivegenericrank}, if we have another variety $\Eps'/K$, endowed with an elliptic fibration $\pi':\Eps'\rightarrow \P_1$, and a finite field extension $L/K$, such that there exists an isomorphism $\phi_L:\Eps'_L\rightarrow \Eps_L$ such that $\pi'_L=\pi_L\circ \phi_L$, and $\phi_L^*H$ is $\Gal(L/K)$-invariant, then $\phi_L^{-1}(U)$ satisfies the same thesis of Lemma \ref{positivegenericrank}. We refer the reader to ... for more details.
+\end{remark}
+
+
+\begin{corollary}\label{zariskidensi}
+	Let $\Eps/K$ be a smooth projective algebraic surface, with two elliptic fibrations $\pi_1,\pi_2:\Eps \rightarrow \P_1$, such that the morphism $(\pi_1,\pi_2):\Eps \rightarrow \P_1 \times \P_1$ is finite. Let $U_1, \ U_2$ be as in Lemma \ref{positivegenericrank}, for $(\Eps,\pi)=(\Eps,\pi_1), \ (\Eps, \pi_2)$ respectively. Then, if $(U_1\cap U_2)(K)\neq \emptyset$, the $K$-rational points of $\Eps$ are Zariski-dense.
+\end{corollary}
+\begin{proof}
+	Let $P \in (U_1\cap U_2)(K)$, then $\pi_1^{-1}(\pi_1(P))$ has infinitely many $K$-rational points by Lemma \ref{positivegenericrank}. Let $Q_n, \ n\in \N$ be the points in $(\pi_1^{-1}(\pi_1(P))\cap U_2)(K)$. For each $Q_n$, the curve $\pi_2^{-1}(\pi_2(Q_n))$ has infinitely many $K$-rational points by Lemma \ref{positivegenericrank} applied to $Q_n \in U_2(K)$. Let now $V\subset \Eps$ denote the Zariski closure of $\cup_{n \in \N} \pi_2^{-1}(\pi_2(Q_n))(K)$. By construction, for each $n \in \N$, $\cup_{n \in \N} \pi_2^{-1}(\pi_2(Q_n)) \subset V=\pi_2^{-1} (\{\pi_2(Q_n)\}_{n \in \N})$. Since $(\pi_1,\pi_2):\Eps \rightarrow \P_1 \times \P_1$ is finite, $\{\pi_2(Q_n)\}_{n \in \N}$ is an infinite set (hence Zariski-dense in $\P_1$), from which the thesis follows.
+\end{proof}
+
+
+
+\section{Proof of \ref{K3surfaces}}
+\begin{theorem}\label{mydoublefibration}
+	Let $E/K$ be a smooth simply connected surface with two elliptic fibrations over $\P_1/K$, denoted by $\pi_1,\pi_2$, such that the morphism $(\pi_1,\pi_2):\Eps \rightarrow \P_1 \times \P_1$ is finite. We denote the fibers of these fibrations by  $E_{j,x}=\pi_j^{-1}(x)$, where $x \in \P_1(\overline{K})$. We assume that the following conditions hold.
+	\begin{itemize}
+		\item[(a)] There exists a finite set of points $Z \subset \P_1(\overline{K})$, such that, for $x \in \P_1(K)\setminus Z$, if $E_{2,x}$ has infinitely many $K$-rational points $\{P_n\}_{n \in \N}$, all but finitely many $P_n \in E_{2,x}(K)$ lie on a fiber $E_{1,y}$ with infinitely many $K$-rational points.
+		\item[(b)] Denote by $E_{1,\lambda_0}$ the generic fiber of $\pi_1:E \rightarrow \P_1/K$, and $K(\lambda)$ the field of rational functions of the codomain of $\pi_1$. Take $\pi_{2,0}:E_{1,\lambda_0}\longrightarrow \P_{K(\lambda)}^1$ to be the restriction of $\pi_2$ to $E_{1,\lambda_0}$. Then there is at most one constant (in $\lambda$) diramation point of $\pi_{2,0}$ (viewed as point in $\P_1(\overline{{K(\lambda)}})$), and the same holds inverting $\pi_1$ and $\pi_2$.
+		\item[(c)] There are two non-thin subsets $N_1,N_2$ of $\P_1(K)$, such that, for $j=1,2$, $E_{j,x}$ has infinitely many $K$-rational points for each $x \in N_j$.
+	\end{itemize} 
+	We have then that the surface $E/K$ has the Hilbert Property.
+\end{theorem}
+
+
+
+\begin{lemma}\label{ellipticnotthin}
+	Let $\pi_i:E_{i}\longrightarrow \P_1/K, \ i\in I$, with $\abs{I}=\infty$,  be elliptic covers of $\P_1/K$ (i.e. finite morphisms where $E_i$ is an irreducible smooth genus $1$ curve), such that: 
+	\begin{itemize}
+		\item For every $n \geq 1$, and every $n$-tuple of points $p_1, \dots, p_n$ in $\A_1/K$, we have that for all but finitely many $i\in I$, $E_i \longrightarrow \P_1/K$ does not ramify over the $p_i$'s;
+		\item For each $i \in I$ there is a subset $S_i \subset E_i(K)$ of infinite cardinality.
+	\end{itemize}
+	Then $\bigcup_i \pi_i(S_i)$ is not thin in $\P_1/K$. 
+\end{lemma}
+\begin{proof}
+	See \cite{myarticle1}. As in Theorem \ref{mydoublefibration}, we are allowing here one point of common ramification for all the $E_i$'s (namely, the point at $\infty$), but the proof of this Lemma is essentially the same as the one given in \cite{myarticle1}. 
+\end{proof}
+
+
+\begin{lemma}\label{twofibrations}
+	Let $\Eps/K$ be a smooth projective algebraic surface, with two elliptic fibrations $\pi_1,\pi_2:\Eps \rightarrow \P_1$, such that the morphism $(\pi_1,\pi_2):\Eps \rightarrow \P_1 \times \P_1$ is finite. Assume that the $K$-rational points of $\Eps$ are Zariski-dense, and that the following condition holds.
+	\begin{itemize}\label{genericramification}
+		\item Denote by $E_{1,\lambda_0}$ the generic fiber of $\pi_1:\Eps \rightarrow \P_1/K$, and $K(\lambda)$ the field of rational functions of the codomain of $\pi_1$. Take $\pi_{2,0}:E_{1,\lambda_0}\longrightarrow \P_1/{K(\lambda)}$ to be the restriction of $\pi_2$ to $E_{1,\lambda_0}$. Then there is at most one constant (in $\lambda$) diramation point of $\pi_{2,0}$ (viewed as point in $\P_1(\overline{{K(\lambda)}})$), and the same holds inverting $\pi_1$ and $\pi_2$.
+	\end{itemize}
+	Then, there exists a non-thin subset $S \subset \P_1(K)$ such that for each $x \in S$, $\pi_2^{-1}(x)$ has infinitely many $K$-rational points.
+\end{lemma}
+\begin{proof}
+	Let $U_1, \ U_2$ be as in Lemma \ref{positivegenericrank}, for $(\Eps,\pi)=(\Eps,\pi_1), \ (\Eps, \pi_2)$ respectively.
+	
+	By Lemma \ref{positivegenericrank}, it is sufficient to show that $\pi_2(U_2(K))\subset \P_1(K)$ is not thin. To prove this, we first note that, as $K$-rational points are Zariski-dense in $\Eps$ by hypothesis, we have that $Y \defeq \pi_1((U_1 \cap U_2)(K))$ has infinite cardinality. For each $y \in Y$, we have that $\pi_1^{-1}(y)$ has infinitely many $K$-rational points, by Lemma \ref{positivegenericrank}, and $\pi_1^{-1}(y)\cap U_2 \neq \emptyset$, hence $\pi_1^{-1}(y)\cap U_2(K)$ has infinite cardinality.
+	
+	By applying Lemma \ref{ellipticnotthin} to the family $((\pi_1^{-1}(y),\pi_1^{-1}(y)\cap U_2(K)))_{y \in Y}$ (the hypothesis of the Lemma are satisfied because of the condition we assumed by hypothesis), we know that:
+	\begin{equation*}
+	\bigcup_{y\in Y} \pi_1^{-1}(y)\cap U_2(K) \subset \pi_2(U_2(K)),
+	\end{equation*}
+	is not thin, from which the thesis follows.
+\end{proof}
+
+\begin{proof}[Proof of Theorem \ref{K3surfaces}]
+	The proof is now an immediate consequence of Theorem \ref{mydoublefibration}. In fact, let us check the hypothesis.
+	\begin{enumerate}
+		\item[(a)] This follows immediately from Lemma \ref{positivegenericrank}. In fact, let $U \subset \Eps$ be as defined in Lemma \ref{positivegenericrank} applied to $(\Eps, \pi_1)$. Then, if we let $Z= \{x \in \P_1(\overline{K}) \ | \ E_{2,x}\cap U = \emptyset\}$, the condition is satisfied for such $Z$.
+		\item[(b)] This is exactly the condition we are assuming to be true by hypothesis.
+		\item[(c)] This is a direct consequence of Lemma \ref{twofibrations}. 
+	\end{enumerate}
+\end{proof}

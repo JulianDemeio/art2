@@ -1,0 +1,376 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{glaudo_en_pkg}
+
+\begin{document}
+
+
+	\title{Elliptic fibrations and the Hilbert Property}
+	\author{Julian Lawrence Demeio}
+
+
+\maketitle
+
+\begin{abstract}
+	For a number field $K$, an algebraic variety $X/K$ is said to have the Hilbert Property if $X(K)$ is not thin. We are going to describe some examples of algebraic varieties, for which the Hilbert Property is a new result.
+	
+	The first class of examples is that of smooth cubic hypersurfaces with a $K$-rational point in $\P_n/K$, for $n \geq 3$. These fall in the class of unirational varieties, for which the Hilbert Property was conjectured by Colliot-Thélène and Sansuc.
+	
+	The second class is that of simply connected algebraic surfaces endowed with two elliptic fibrations, subject to a technical condition. This result generalizes earlier work on diagonal quartics in $\P_3$. In this family of examples we find some instances of K3 surfaces for which the Hilbert Property is a new result. Among these we also find some Kummer surfaces, for which the Hilbert Property was suggested to be true by Corvaja and Zannier.
+\end{abstract}
+
+\section{Introduction}
+
+This paper will be concerned with providing some examples of varieties with the \textit{Hilbert Property}, concerning the set of $k$-rational points $X(k)$, for an algebraic variety $X$ over a field $k$.
+
+A geometrically irreducible variety $X$ over a field $k$ is said to have the \textit{Hilbert Property} if, for any finite morphism $\pi:E \rightarrow X$, such that $X(k)\setminus \pi(E(k))$ is not Zariski-dense in $X$, there exists a rational section of $\pi$ (see  \cite[Ch. 3]{Serre} for an introduction of the Hilbert Property).
+
+
+Motivation for the study of the Hilbert Property comes from the following conjecture, of which a proof would settle the Inverse Galois Problem (as noted in \cite{congetturastrong}):
+
+
+\begin{conjecture}[Colliot-Thélène, Sansuc]\label{congetturona}
+	Let $X/k$ be a unirational variety over a number field, then $X$ has the Hilbert Property.
+\end{conjecture}
+
+The results of this paper all concern the proof of the Hilbert Property for some specific classes of varieties, which are characterized by the presence of multiple elliptic fibrations. 
+
+The first result, in Section ... is the Hilbert Property for smooth cubic hypersurfaces, of $\dim \geq 2$ over a number field $K$ with at least one $K$-rational point. Since, under these hypothesis, cubic hypersurfaces are $K$-unirational (\cite[...]{unirationalcubics}), this result gives positive examples of Conjecture \ref{congetturona}. We then turn, in Section ..., onto giving explicit examples of K3 surfaces with the Hilbert Property. This examples are produced starting from a construction presented in \cite{...}, by ... .
+
+
+
+% Throughout this paper, $k$ will always denote a field of characteristic $0$, and $K$ a number field, and by "variety" we will always mean an algebraic variety (not necessarily irreducible).
+
+
+......
+
+
+
+\section{Background}
+
+We recall in this section some standard facts and known theorems, that we are going to use in later sections. ...
+
+
+\paragraph{Notation}
+
+Throughout this paper, except when otherwise stated, $k$ denotes a perfect field and $K$ a number field. A ($k$-)\textit{variety} is an algebraic quasi-projective variety (defined over the field $k$), not necessarily irreducible or reduced. Unless specified otherwise, we will always work with the Zariski topology. 
+
+Given a morphism $f:X \rightarrow Y$ between $k$-varieties, and a point $s:\Spec(k(s))\rightarrow Y$, we denote by $f^{-1}(s)$ the scheme-theoretic fibered product $\Spec(k(s))\times_Y X$, and call it the \textit{fiber} of $f$ in $s$. Hence, with our notation, this is not necessarily reduced. ...=c'è bisogno?
+
+
+\paragraph{Cubic hypersurfaces}
+
+Cubic hypersurfaces are hypersurfaces in $\P_n$ defined by a cubic homogeneous polynomial. We recall the following:
+
+\begin{theorem}\label{Thm:unirationalcubics}
+	...
+\end{theorem}
+
+...
+
+\paragraph{Hilbert Property}
+
+For a more detailed exposition of the basic theory of the Hilbert Property and thin sets we refer the interested reader to \cite[Ch. 3]{Serre}. We limit ourselves here to recalling some basic definitions and properties.
+
+
+\begin{definition}\label{Def:thin}
+	Let $X$ be a geometrically integral variety, defined over a field $k$. A \textit{thin} subset $S \subset X(k)$ is any set contained in a union $D(k)\cup \bigcup_{i=1,\dots,n} \pi_i(E_i(k))$, where $D \subsetneq X$ is a subvariety, the $E_i$'s are irreducible varieties and $\pi_i:E_i \rightarrow X$ are generically finite morphisms of degree $>1$.
+\end{definition}
+
+
+\begin{remark}\label{HPthin}
+	A $k$-variety $X$ has the Hilbert Property if and only if $X(k)$ is not thin.
+\end{remark}
+
+The following proposition summarizes some basic properties of the Hilbert Property.
+\begin{proposition}\label{HP}
+	Let $k$ be a perfect field, and $X$ be a geometrically irreducible $k$-variety.
+	\begin{itemize}
+		\item[(i)] If $X$ has the Hilbert Property and $Y$ is a $k$-variety birational to $X$, then $Y$ has the Hilbert Property. 
+		\item[(ii)] If $X$ is a rational variety, and $k$ is a number field, then $X$ has the Hilbert Property.
+		\item[(iii)] If $X$ has the Hilbert Property, and $L/k$ is a finite extension, then $X_L$ has the Hilbert Property.
+	\end{itemize}
+\end{proposition}
+\begin{proof}
+	$(i)$ is an immediate consequence of Remark \ref{HPthin}. It follows from $(i)$ that, in order to prove $(ii)$, it suffices to prove that $\A_n/k$ has the Hilbert Property. This is a consequence of the Hilbert Irreducibility Theorem. We refer the reader to \cite[Ch. 3]{Serre} for the details, and a proof of $(iii)$.
+\end{proof}
+
+
+
+The examples in this paper are all derived from the following two general theorems, which are, respectively, Theorem 1.1 of \cite{fibrazioniHP} and Theorem ... of \cite{myarticle1}.
+
+\begin{theorem}[Bary-Soroker, Fehm, Petersen]\label{fibrationHP}
+	Let $f:X \rightarrow S$ be a morphism of $K$-varieties. Suppose that $S/K$ has the Hilbert Property and that there exists a subset $A \subset S(K)$ not thin such that for each $s \in A$, $f^{-1}(s)$ has the HP. Then $X/K$ has the HP.
+\end{theorem}
+\begin{proof}
+	See \cite[Theorem 1.1]{fibrazioniHP}.
+\end{proof}
+
+\begin{definition}\label{ellipticfibration}
+	Let $\Eps/K$ be a normal algebraic surface, and let $\pi:\Eps \rightarrow \P_1$ be a morphism. We say that $\pi$ is an elliptic fibration, if its generic fiber is a smooth, geometrically irreducible, genus $1$ curve.
+\end{definition}
+
+\begin{theorem}\label{mydoublefibration}
+	Let $K$ be a number field, and $E$ be a simply connected algebraic surface, endowed with two elliptic fibrations $\pi_i:E \rightarrow \P_1/K, \ i=1,2$. Suppose that the following hold:
+	\begin{itemize}
+		\item[(a)] The $K$-rational points $E(K)$ are Zariski-dense in $E$;
+		\item[(b)] Let $\eta_1 \cong \Spec K(\lambda)$ be the generic point of the codomain of $\pi_1$. All the diramation points (i.e. the images of the ramification points) of the morphism $\restricts{\pi_2}{\pi_1^{-1}(\eta_1)}$ are non-constant in $\lambda$, and the same holds upon inverting $\pi_1$ and $\pi_2$.
+		%		Let $\pi_{2,0}:E_{1,\eta}\longrightarrow \P_{K(\lambda)}^1$ be the restriction of $\pi_2$ to $E_{1,\eta}$. Then all the diramation points of $\pi_{2,0}$ (viewed as points in $\P_1/{K(\lambda)}$) are non-constant in $\lambda$, and the same holds upon inverting $\pi_1$ and $\
+	\end{itemize}
+	Then the surface $E/K$ has the Hilbert Property.
+\end{theorem}
+
+\begin{proof}
+	See \cite{myarticle1}. ...
+\end{proof}
+%\begin{proof}
+%	The proof follows the same pattern as that of \cite{myarticle1}. The only difference is that, in \cite{myarticle1}, the hypothesis $(b)$ was replaced with "no costant diramation points". This hypothesis is used only to prove that, if $C$ is a smooth geometrically irreducible curve, and $\phi:C \rightarrow \P_1$ is a finite morphism, then the fibered product $D_{\lambda} \defeq E_{1,\lambda}\times_{(\pi_2,\phi)}C$ is generically (in $\lambda$) geometrically irreducible, and that the morphism $\hat{D_{\lambda}} \rightarrow D_{\lambda} \rightarrow E_{1,\lambda}$, where $\hat{D_{\lambda}}\rightarrow D_{\lambda}$ denotes the normalization of $D_{\lambda}$ is (generically) ramified. This followed from the fact that $\P_1$ is a simply connected algebraic curve. When there is one constant ramification point $P \in \P_1$, however, one may easily still obtain the same result using the simple connectedness of $\P_1 \setminus P$.
+%\end{proof}
+
+
+
+\section{Hilbert Property for cubic hypersurfaces}
+
+\begin{theorem}\label{cubiche}
+	Let $X\subset \P_n/K$, $n \geq 3$ be a smooth cubic hypersurface, with a $K$-rational point. Then $X$ has the Hilbert Property.
+\end{theorem}
+%In this section we prove Theorem \ref{cubiche}.
+ In this section our base field will always be assumed to be a number field $K$.
+
+We need the following lemma, of which an explicitly computable version can be found in \cite{RonaldvanLuijk2012}, and its corollary.
+
+\begin{lemma}\label{positivegenericrank}
+	Let $\pi:\Eps \rightarrow \P_1$ be an elliptic fibration, defined over a number field $K$. Then, there exists an open Zariski subset $U_{\pi} \subset \Eps$ such that, for any $P \in U_{\pi}(K)$, $\pi^{-1}(\pi(P))$ is smooth and $\#{\pi^{-1}(\pi(P))(K)}=\infty$. 
+\end{lemma}
+
+\begin{corollary}\label{zariskidensi}
+	Let $\Eps/K$ be a smooth projective algebraic surface, with two elliptic fibrations $\pi_1,\pi_2:\Eps \rightarrow \P_1$, such that the morphism $(\pi_1,\pi_2):\Eps \rightarrow \P_1 \times \P_1$ is finite. Let $U_1, \ U_2$ be as in Lemma \ref{positivegenericrank}, for $(\Eps,\pi)=(\Eps,\pi_1), \ (\Eps, \pi_2)$ respectively. Then, if $(U_1\cap U_2)(K)\neq \emptyset$, the $K$-rational points of $\Eps$ are Zariski-dense.
+\end{corollary}
+\begin{proof}
+	See \cite[...]{myarticle1}.
+\end{proof}	
+
+
+
+%\begin{lemma}
+%	Let $f:X \rightarrow \P_1/k$ be a dominant, generically smooth map, where $X/k$ is a normal simply connected variety. We assume that the generic fiber of $f$ is a smooth curve of genus $1$, and that there is a 
+%\end{lemma}
+
+\begin{proof}[Proof of Theorem \ref{cubiche}]
+	
+	Before all, let us remark that $X$ is $K$-unirational by Theorem \ref{Thm:unirationalcubics}, in particular it has Zariski-dense $K$-rational points.
+	
+	Keeping the notation of \ref{cubiche}, we prove the result by induction on $n$.
+	
+	\emph{Case} $n=3$.
+
+	We assume by contradiction that $X$ does not have the HP. Then there exist irreducible covers $\phi_i: Y_i \rightarrow X, \ i=1, \dots, m$ of degree $\deg \phi_i >1$ and a divisor $D \subset X$ such that $X(K) \subset \cup_i \phi_i(Y_i(K)) \cup D(K)$. We may assume, without loss of generality, that the $Y_i$'s are normal and geometrically integral\footnote{In fact, possibly by enlarging $D$, one can substitute $Y_i$ with its normalization. A normal variety that is not geometrically integral over the base field $K$ does not have any $K$-rational points.}, and that the $\phi_i$'s are finite morphisms. Let us denote now by $D_i$ the diramation divisor (see Remark \ref{Zariski}) of $\phi_i$. By Lefschetz' hyperplane Theorem, $X$ is simply connected, hence we know that the $D_i$'s are nonempty for each $i=1, \dots, m$. 
+	
+	Let us denote by $\A_4^*$ the dual affine space of $\A_4$, minus the origin. To each element of $\A_4^*$ corresponds a hyperplane of $\P_3$ in a canonical way\footnote{Namely, if $\lambda \in \A_4^*$, the associated hyperplane is $\{\mathbf{x} \in \P_3 \ | \ \lambda(\mathbf{x})=0\}$.}. Let $(H_1,H_2) \in \A_4^* \times \A_4^*$ be such that 
+	%us denote now by $U\subset \A_4^* \times \A_4^*$ a Zariski open subset such that each of the following conditions is satisfied for each $(H_1,H_2) \in U$:
+	\begin{enumerate}
+		\item $H_1 \cap H_2 \cap X$ is (a scheme consisting of) three distinct points (and hence, as a direct consequence, $H_1 \cap H_2$ is a line), and it is disjoint from the union of the $D_i$'s;
+		\item $H_1 \cap X$ and $H_2 \cap X$ are smooth curves;
+		\item The morphism $[H_1:H_2]:X \setminus H_1 \cap H_2 \rightarrow \P_1$ is non-constant on each of the irreducible components of the $D_i$'s.
+	\end{enumerate}
+	We note that, since all conditions are open and non-empty, such a couple $(H_1,H_2)$ always exists.
+%	 such an open subset $U$ exists because the first and the third condition are open \footnote{For the first one, this is obvious. For the third one, one may use the following elementary argument to prove that the condition is open. For each $i$, let $D_i^j, \ j=1,\dots, m_i$ denote the irreducible components of $D_i$, and let $d_{i,j}=\deg D_i^j$. For each $i, j \in {1,\dots,m_i}$, fix $d_{i,j}+1$ points ($R^{i,j}_0, \dots, R^{i,j}_{d_{i,j}}$) on the curve $D_i^j$. 
+%		%We assume without loss of generality that these points are chosen in generic position. 
+%		Then the morphism $[H_1:H_2]$ is constant on $D_i^j$ if and only if it is constant on the set $\{R^{i,j}_0, \dots, R^{i,j}_{d_{i,j}}\}$, but, since this is a finite set, this is an open condition.} and non-empty, while the second one is non-empty by Bertini's theorem \cite[Remark 10.9.2]{hartshorne}, and open because $X$ is closed in $\P_3$.
+%	
+%	We choose now a point $(H_1,H_2) \in U(K)$, 
+
+	Let $\{P_1,P_2,P_3\}$ be the intersection $H_1 \cap H_2 \cap X$, and let $\pi:  X \setminus \{P_1,P_2,P_3\}  \rightarrow \P_1$ be the following morphism:
+	\begin{equation*}
+		P \longmapsto [H_1(P):H_2(P)].
+	\end{equation*}
+
+	The map $\pi$ extends naturally to a morphism $\hat{\pi}:\hat{X} \rightarrow \P_1$, where $\hat{X}=\Blowup_{P_1+P_2+P_3}X$ denotes the blowup of $X$ in the (smooth) subscheme $P_1+P_2+P_3 \subset X$. We note that, since $X$ is a cubic surface, the morphism $\hat{\pi}$ is an elliptic fibration. 
+	
+	
+	We claim now that the morphisms $\pi \circ \phi_i:Y_i \setminus \phi_i^{-1}(\{P_1,P_2,P_3\}) \rightarrow \P_1$ have geometrically integral generic fiber for each $i=1, \dots, m$. In fact, let us assume by contradiction that there exists an $i \in \{1, \dots, m\}$ such that the morphism $\pi \circ \phi_i$ has a geometrically reducible generic fiber. Then, by the existence of the relative normal factorization (Theorem \ref{Steinfactorization}), there exist a (smooth, geometrically integral) curve $C$, and morphisms $\pi':Y_i \setminus \phi_i^{-1}(\{P_1,P_2,P_3\}) \rightarrow C$ and $r:C \rightarrow \P_1$ such that $\pi \circ \phi_i =r \circ \pi'$, and $\deg r >1$. This, in turn, gives rise to a morphism $\phi'_i:Y_i \setminus \phi_i^{-1}(\{P_1,P_2,P_3\}) \rightarrow X \setminus \{P_1,P_2,P_3\}\times_{\P_1}C$, and a factorization $\phi_i=\alpha \circ \phi'_i$, where $\alpha: X \setminus \{P_1,P_2,P_3\}\times_{\P_1}C \rightarrow  X \setminus \{P_1,P_2,P_3\}$ denotes the first projection morphism.
+	
+	Hence, the diramation of $\phi_i$ would contain the diramation of $\alpha$, which is nonempty (since $\P_1$ is simply connected) and contained all in the fibers of $\pi$ (by Theorem \ref{ramification}). This contradicts our choice of $(H_1,H_2)$.
+	
+%	We have hence proved that the geometric generic fibers of $\pi \circ \phi_i$ are irreducible for each $i=1,\dots, m$.
+
+	Let us now denote by $\hat{Y_i}$ the desingularization of $Y'_i=Y_i \times_X \hat{X}$, and by $\psi_i:\hat{Y_i}\rightarrow \P_1$  the composition of the desingularization morphism $\hat{Y_i} \rightarrow Y'_i$, the projection $Y'_i \rightarrow \hat{X}$ and the map $\hat{\pi}:\hat{X} \rightarrow \P_1$. By the Theorem of generic smoothness \cite[Corollary 10.7]{hartshorne} we know that there exists an open subset $V_i \subset \P_1$ such that, for each $t \in V_i(\overline{K})$, $\psi_i^{-1}(t)$ is smooth (and we may assume, by further restricting $V_i$, irreducible as well, beacuse $\psi_i$ has geometrically irreducible generic fiber). Let us denote now by $D'$ the proper subscheme $D' \subset \hat{X}$, which is the union of all the following:
+	\begin{enumerate}
+		\item the fibers $\hat{\pi}^{-1}(x)$, for each $x \notin V_i$, for some $i=1, \dots, m$;
+		\item the proper transform of $D \subset X$, and the exceptional locus of $\hat{X}\rightarrow X$;
+		\item the proper transform of $X \setminus U$, where $U$ is defined as in Lemma \ref{positivegenericrank} for $(\Eps,\pi)=(\hat{X},\hat{\pi})$. 
+	\end{enumerate}
+	Let us now choose a $K$-rational point $P \in (\hat{X}\setminus D')(K)$, and let us denote by $E_P$ the fiber $\hat{\pi}^{-1}(\hat{\pi}(P))$. We know, by Lemma \ref{positivegenericrank}, that $E_P$ has infinitely many $K$-rational points. We have assumed, however, that  $X(K) \subset \cup_i \phi_i(Y_i(K)) \cup D(K)$, from which follows that  $\hat{X}(K) \subset \cup_i \phi'_i(Y_i(K)) \cup D'(K)$, and hence 
+	\begin{equation}\label{curvaeP}
+	E_P(K) \subset \cup_i \psi_i^{-1}(\hat{\pi}(P))(K) \cup (E_P\cap D')(K). 
+	\end{equation}
+
+	We claim that the right hand side of \ref{curvaeP} is finite. In fact, for each $i=1,\dots, m $, the morphism $\psi_i^{-1}(\hat{\pi}(P)) \rightarrow E_P$ is ramified by Proposition \ref{ramification}, and, since the curve $\psi_i^{-1}(\hat{\pi}(P))$ is a smooth irreducible curve, it is of genus $>1$. As a consequence, by Falting's theorem, $\psi_i^{-1}(\hat{\pi}(P))(K)$ is finite for each $i=1,\dots, m$. Moreover, $(E_P\cap D')$ is obviously finite, hence we have proved that the right hand side of \ref{curvaeP} is finite. As we noted before, however, $E_P(K)$ is infinite, hence we have reached an absurd, proving the theorem in the case $n=3$.
+	
+	
+	\emph{Case} $n \geq 4$.
+
+	By Bertini's theorem \cite[Remark 10.9.2]{hartshorne}, we know that there exists a Zariski-open subset $U \subset X$ such that, for each $P \in U(\overline{K})$, the generic hyperplane of $\P_n$ passing through $P$ cuts $X$ in a smooth irreducible cubic of dimension $n-2$.
+	
+	 We choose now a $K$-rational point $P \in U(K)$ %(which exists because $K$-rational points are Zariski-dense)
+	, and two $K$-rational (distinct) hyperplanes $H_0, H_{\infty}$ passing through $P$ such that $H_0 \cap X$ is smooth.
+	
+	Let us consider now the following morphism:
+	\begin{equation*}
+		\phi:  X \setminus L \cap X \longrightarrow \P_1, \quad
+		P \longmapsto [H_0(P):H_{\infty}(P)],
+	\end{equation*}
+	which extends naturally to a morphism $\hat{\phi}: \Blowup_{L \cap X}X \rightarrow \P_1$. For $t=[t_1:t_2] \in P_1$, the scheme-theoretic fiber $\hat{\phi}^{-1}(t)$ is isomorphic to the intersection $H_t \cap X$, where $H_t$ denotes the hyperplane $t_1H_0+t_2H_{\infty}=0$ in $\P_n$. Since $H_0 \cap X$ is smooth, the intersection $H_t \cap X$ is smooth for $t$ in a Zariski open subset $U_C \subset \P_1(\overline{K})$, containing $0$. For $x \in U_C$, the fiber $\hat{\phi}^{-1}(x)$ is a smooth cubic in an $(n-1)$-dimensional projective space, with a $K$-rational point in it (namely, $P$). Hence, by induction hypothesis, this fiber has the HP, and hence, since $\P_1/K$ has the HP, $X$ has the HP as well by Theorem \ref{fibrationHP}. We have hence proved the theorem.
+	%We claim now that, know that $E_P \cap D'$ is finite, and, for each $i=1,\dots, m $, the curve $\psi_i^{-1}(\hat{\pi}(P))$ is a smooth curve of genus $>1$
+\end{proof}
+
+%We put in this section also the following Lemma, as we feel it might be considered of independent interest. We are going to need this in the next section.
+
+
+\section{A family of K3 surfaces with the Hilbert Property}
+
+%In this section we look at applications of Theorem \ref{K3surfaces}, and we are particularly interested in K3 surfaces, as this represent a limiting case for the study of rational points in dimension $2$
+ ...\footnote{K3 surfaces (and, in general, Calabi-Yau varieties) represent a "limiting case" for the study of rational points, at least conjecturally. In fact, the conjectures of Vojta suggest that on algebraic varieties there should be "less" rational points as the canonical bundle gets "bigger". Hence, since for K3 surfaces the canonical bundle is trivial by definition, we expect the rational points here not to be "too much", yet their existence (and Zariski-density) is not precluded. In fact, proving the HP, we are providing some examples of abudance of rational points in such surfaces.}
+
+We are going to describe here a family of examples to which Theorem \ref{K3surfaces} applies. All these examples are birational a variety $X'_{\lambda}(f_1,f_2)\subset \P_1\times \P_2$, where:
+
+\begin{equation}\label{kummer}
+	X'_{\lambda}(f_1,f_2)\defeq\{([w_0:w_1],[x:y:z])\in \P_1\times \P_2\ | \ w_0^2f_1(x,y,z)=\lambda w_1^2f_2(x,y,z)\},
+\end{equation}
+
+ for some $\lambda \in K^*$, and $f_1,f_2 \in K[x,y,z]$ cubic homogeneous polynomials.
+ 
+ \smallskip
+ 
+ 
+\begin{remark}\label{casoparticolarekummer}
+	When $f_1(x,y,z)=f_1(x,z)$ does not depend on $y$, $f_2(x,y,z)=f_2(y,z)$ does not depend on $x$ and both $f_1$ and $f_2$ do not have multiple roots, equation (\ref{kummer}) describes a Kummer surface (i.e. a quotient of an abelian surface by the group of isomorphisms $\{\pm 1\}$).
+	
+	In fact, equation (\ref{kummer}) describes exactly the quotient of $E_1 \times E_2$ by the group $\{\pm 1\}$, where $E_1$ and $E_2$ are the elliptic curves defined by the following Weierstrass equations:
+	\begin{equation}\label{ellittichechecopronolakummer}
+	E_1: \ w^2=f_1(x,z),
+	E_2: \ w^2=f_2(y,z).
+	\end{equation} 
+\end{remark}
+
+
+\smallskip
+%We note that the surfaces described through \ref{kummer} are Kummer surfaces (i.e. quotients of an abelian surface by the group of isomorphisms $\{\pm 1\}$). 
+
+
+The K3 surfaces that we are going to describe are introduced in \cite{garbagnati}, and they are constructed in such a way that they are naturally endowed with multiple elliptic fibrations.
+
+Let $P_1,\dots ,P_9$ be nine (distinct) points in $\P_2(\overline{K})$ such that:
+\begin{enumerate}
+	\item $P_1,\dots, P_4$ are the four points of intersection of two smooth conics in $\P_2$, defined over $K$;
+	\item $P_5,\dots, P_8$ are the four points of intersection of two smooth conics in $\P_2$, defined over $K$;
+	\item The eight points $P_1,\dots, P_8$ are in generic position\footnote{\label{genericpoints}By this, we mean that no three of these points lie on a line, and no six of these points lie on a conic.};
+	\item $P_1, \dots, P_9$ are the nine points of intersection of two smooth cubics (say $C_1,C_2$) in $\P_2$, defined over $K$.
+\end{enumerate}
+
+\begin{definition}\label{good}
+	We say that a ninetuple $(P_1,\dots, P_9) \in P_2(\bar{K})^9$ is \emph{good} if it satisfies the four conditions above.
+\end{definition}
+
+\begin{remark}
+	Nine such points may always be constructed in the following way. Let $Q_1, Q_2$ be two (distinct) smooth conics (defined over $K$) in $\P_2/K$, and let $P_1,\dots, P_4$ be their four points of intersection.
+	
+	Let then $Q_3, Q_4$ be other two different smooth conics, defined over $K$, such that the base locus of the pencil generated by them is made by four points, say $P'_1,\dots, P'_4$, such that the points $P_1,\dots, P_4, P'_1,\dots, P'_4$ are in generic position\footref{genericpoints}. We note that this condition is satisfied if $Q_3$ and $Q_4$ are two generic conics.
+	
+	Let now $\{P_5,\dots, P_8\}=\{P'_1,\dots,P'_4\}$, and let $C_1, C_2$ be two (distinct) smooth cubics of the pencil of cubics\footnote{It is well known that, under our assumption of genericity on the points $P_1,\dots,P_8$, there is a dimension $1$ pencil of cubics (generically non-singular) passing through these.} passing through the points $P_1,\dots,P_8$. We let now $P_9$ be the ninth point of intersection (different from $P_1,\dots, P_8$) of $C_1$ and $C_2$, which is a base point for the pencil of cubics passing through $P_1,\dots, P_8$.
+\end{remark}
+
+Let $R\defeq \Blowup_{P_1+\dots+P_9}\P_2$ be the blowup of $\P_2$ in the nine points $P_1,\dots,P_9$. The two cubics $C_1,C_2$ define an elliptic fibration on $R$, which, on $\P_2 \setminus \{P_1,\dots, P_9\}$ is defined as:
+\begin{equation}\label{lafibrazioneellittica}
+	\pi:\P_2 \setminus \{P_1,\dots, P_9\} \rightarrow \P_1, \quad
+	\pi([x:y:z])=[f_1(x,y,z):f_2(x,y,z)]
+\end{equation}
+
+The fibres of $\pi$ are by construction the proper transform of the elements of the pencil generated by $C_1, C_2$. 
+
+Let now $\lambda \in K^*$ be a constant (we are going to fix its value later), and $f_{\lambda}:\P_1 \rightarrow \P_1$ be the morphism defined by $f_{\lambda}([w_0:w_1])=[w_0^2:\lambda w_1^2]$. Let also $X_{\lambda}$ be the smooth surface defined as the fibered product $R \times_{\pi,f_{\lambda}} \P_1$, $\alpha_{\lambda}:X_{\lambda}\rightarrow R$ be the projection on the first factor, and $\phi_{\lambda}:X_{\lambda}\rightarrow \P_1$ the projection on the second factor. The surface $X_{\lambda}$ is a K3 surface (see \cite[...]{garbagnati}), and it is endowed with at least three elliptic fibrations. The first one is $\phi_{\lambda}$. The second and third one are:
+
+ 
+
+
+
+the unique extensions to $X_{\lambda}$ of the following rational maps:
+
+
+
+ These are, namely, the proper transforms of the two pencil of conics generated by $\{Q_1,Q_2\}$ and by $\{Q_3,Q_4\}$, and the fibration defined by $\phi_{\lambda}$. We denote by $\pi_1$, $\pi_2$ the first two. I.e., $\pi_i=\alpha_{\lambda} \circ \pi'_i$, where the maps $\pi'_i:R \rightarrow \P_1$ are the unique morphisms whose restrictions on $\P_2 \setminus \{P_1,\dots,P_9\}$ are:
+\begin{equation}\label{fibrazioniconiche}
+	\restricts{\pi'_1}{U}:\P_2 \setminus \{P_1,\dots,P_9\} \longrightarrow \P_1, \quad 
+	[x:y:z]\longmapsto[Q_1(x,y,z):Q_2(x,y,z)],
+\end{equation}
+\begin{equation}
+	\restricts{\pi'_2}{U}:\P_2 \setminus \{P_1,\dots,P_9\} \longrightarrow \P_1, \quad	[x:y:z]\longmapsto[Q_3(x,y,z):Q_4(x,y,z)].
+\end{equation}
+
+
+\begin{proposition}\label{exampleprop}
+	The fibrations $\pi_1, \pi_2:X_{\lambda} \rightarrow \P_1$, as defined above, satisfy condition \ref{genericramification}.
+\end{proposition}
+
+\begin{proof}
+	To lighten the notation, let $X\defeq X_{\lambda}$.
+	
+	Let $E_1/K(t)$ be the generic fiber of $\pi_1:X \rightarrow \P_1$, where $\Spec K(t)$ denotes the generic point of the target $\P_1$ of $\pi_1$, and $\pi_2^{gen}=\restricts{\pi_2}{E_1}$. We then have that $\pi_2^{gen}= \pi_2^{\prime gen} \circ r_1^{gen}$, where $r_1^{gen}=\restricts{r}{E_1}$, and $\pi_2^{\prime gen}$ is the restriction of $\pi'_2$ to the generic fiber $R_1/K(t)$ of $\pi'_1$.
+	
+	....= rewrite dando dei nomi
+	
+	First of all, we note that the diramation points of $\pi_2^{gen}$ are the union of the diramation points of $\pi_2^{\prime gen}$ and the image under $\pi_2^{\prime gen}$ of the diramation points of $r_1^{gen}$. Secondly, we note that $r_1^{gen}\defeq\restricts{r}{E_1}$ has diramation in the intersection of $R_1$ and the two cubics $C_1$ and $C_2$ (by Theorem \ref{ramification}...). These intersection points are non-constant in $t$ (if they were constant, they would be base points for the pencil of quadrics generated by $Q_1,Q_2$ in $R$, which is base point free). Morover, since neither $C_1$ or $C_2$ are contained in the fibers of $\pi'_2$, the image under $\pi_2^{\prime gen}$ of these diramation points are again non-constant in $t$.
+	
+	Hence, it remains to prove that the diramation points of $\pi_2^{\prime gen}$ are non-constant in $t$. We prove this by reducing to an absurd. Suppose by contradiction that there were a constant diramation point $[t^0_1:t^0_2] \in \P_1$. This means that the conic $Q^0\defeq t_1^0Q_3+t_2^0Q_4$ is tangent (in $\P_2$) to each conic in the pencil generated by $Q_1,Q_2$. This is equivalent to saying that the intersection of $Q^0$ with the generic element of the pencil generated by $Q_3,Q_4$ is not smooth. By the Theorem of Bertini \cite[Remark 10.9.2]{hartshorne}, the singular points of this intersection must generically lie in the base locus of the pencil generated by $Q_3,Q_4$, i.e. the four points $P_5, \dots, P_9$. 
+	
+	Let us denote by $P$ such a singular point. We know that, since $P=P_i$ for some $i=5,\dots,9$, each conic of the pencil generated by $Q_3,Q_4$ passes through $P$ and is smooth at this point, and its tangent direction is non-constant. Whence, the intersection of $Q^0$ (which is smooth at $P$, being an irreducible conic in $\P_2$\footnote{In fact, $Q^0$ is a conic passing through $P_1,P_2,P_3,P_4$ and $P$; whence, if it was reducible, it would be a union of two lines passing through these five points, but we know that, by construction, no three of these points are collinear, hence this is absurd.}) and the generic conic in the pencil generated by $Q_3, Q_4$ is smooth at $P$, hence we have reached an absurd.
+	% In turn, this implies that the morphism $\pi_1 \restrict_{Q^0}: Q^0 \rightarrow \P_1$ has degree less than $4$, which in turn implies that the conic $Q^0$ 
+\end{proof}
+
+To apply Theorem \ref{K3surfaces} to $X_{\lambda}$ we still need to prove that $X_{\lambda}$ has Zariski-dense $K$-rational points. This is not guaranteed to be true for a generic $\lambda$, but we will choose $\lambda$ appropriately, so that this holds:
+
+\begin{proposition}\label{nontrivialfamily}
+	Let $P_1, \dots, P_9$ be a good ninetuple of points in $P_2(\bar{K})$. Let $C_1,C_2$ be two smooth cubics passing through these points, and, for $\lambda \in K^*$, let $X_{\lambda}\defeq R \times_{\pi,f_{\lambda}} \P_1$, using the notation above. Then there exist infinitely many $\lambda \in K^*$ such that $X_{\lambda}$ has Zariski-dense $K$-rational points.
+\end{proposition}
+\begin{proof}
+	Let $X=X_1$, i.e. $X_{\lambda}$ for $\lambda = 1$. Let $\iota:X \rightarrow X$ denote the involution given by:
+	\begin{equation}
+		\iota:R \times_{\pi,f_1} \P_1 \rightarrow R \times_{\pi,f_1} \P_1, \quad
+		\iota((r,t))=(r,-t).
+	\end{equation}
+	We note that, for $\lambda \in K^*$, $X_{\lambda}$ is a twist of $X$ by the isomorphism $\Gal (\Q(\sqrt{\lambda})/\Q) \cong G$, where $G\cong \Z/2\Z$ denotes the automorphism group of $X$ generated by $\iota$. 
+	
+	Let $H$ be a $G$-invariant very ample line bundle of positive degree on $X$\footnote{Such a line bundle may always be constructed. For instance, let $H'$ be a very ample line bundle on $X$, then $H=H' + \iota^* H'$ is such a line bundle.}. Let now $U_X \subset X(\overline{K})$ be a Zariski-open subscheme, as in Corollary \ref{zariskidensi}, applied to the two elliptic fibrations $\pi_1^{\lambda}, \pi_2^{\lambda}$, where $\pi_i^{\lambda}$ is the fibration on $X_{\lambda}$ induced by the fibration $\pi'_i$ on $R$ (i.e. $\pi_i^{\lambda}=\alpha_{\lambda}\circ \pi'_i$, where $\alpha_{\lambda}:X_{\lambda}\rightarrow R$ is the projection on $R$). Because of Remark \ref{geometric}, $U_X\times_{\Spec K} \Spec \overline{K}$ can be chosen, without loss of generality, to be independent from $\lambda$.
+	
+	Let analogously $U_R \subset R$ be a Zariski-open subscheme, as in Lemma \ref{positivegenericrank} applied to $(R,\pi)$. Let now $V^0 \subset \P_1(\overline{K})$ be the Zariski-open subset such that, for each $t \in V^0$, $\pi^{-1}(t)\cap U_X \neq \emptyset$ and $\pi^{-1}(t)\cap U_R\neq \emptyset$.
+	
+	We claim now that, if $[w_0:w_1]\in \P_1(K)$ and $\lambda \in K^*$ are such that:
+	 \begin{equation}\label{rationalpointsinK3}
+	 	[w_0^2:\lambda w_1^2]\in \pi(R(K))\cap V_0,
+	 \end{equation}	 
+	then $X_{\lambda}$ has Zariski-dense $K$-rational points. In fact, if $ [w_0^2:\lambda w_1^2]\in \pi(R(K))\cap V_0$, then $\pi^{-1}([w_0^2:\lambda w_1^2])$ has infinitely many $K$-rational points by Lemma \ref{positivegenericrank}, hence $\pi^{-1}([w_0^2:\lambda w_1^2])(K)\cap U_X\neq \emptyset$, and hence, by Corollary \ref{zariskidensi}, $X_{\lambda}$ has Zariski-dense $K$-rational points.
+	
+	We notice now that condition \ref{rationalpointsinK3} is equivalent to the following:
+	\[
+	\lambda \frac{w_1^2}{w_0^2}=\frac{f_1(x,y,z)}{f_2(x,y,z)},
+	\]
+	when $f_2(x,y,z) \neq 0$.
+	By choosing now, any $[x:y:z]\in \P_2(\Q)$ such that $f_2(x,y,z) \neq 0$, $\frac{f_1(x,y,z)}{f_2(x,y,z)}\in V^0$, and by choosing any $[w_0:w_1]$ and $\lambda \in K^*$ such that $\lambda \frac{\lambda w_1^2}{w_0^2}=\frac{f_1(x,y,z)}{f_2(x,y,z)}$, condition \ref{rationalpointsinK3} is satisfied, and $X_{\lambda}$ has infinitely many $K$-rational points. Of course, the possible choices of $\lambda$ are infinite.
+\end{proof}
+
+\begin{corollary}\label{finalcountdown}
+	There exist infinitely many $\lambda \in K^*$ such that $X_{\lambda}$ has the HP.
+\end{corollary}
+\begin{proof}
+	This follows immediately from Theorem \ref{K3surfaces} applied to $X_{\lambda}$, endowed with the fibrations $\pi_1, \pi_2$, when $\lambda \in K^*$ is such that $X_{\lambda}$ has infinitely many $K$-rational points (as Proposition in \ref{nontrivialfamily}). We note that the hypothesis \ref{genericramification} of Theorem \ref{K3surfaces} is satisfied because of Proposition \ref{exampleprop}, while the other hypothesis are satisfied by construction.
+\end{proof}
+
+\begin{remark}
+	One may use a similar argument\footnote{In this case, Zariski density of rational points on $X=X_{\lambda}(f_1,f_2)$ follows immediately from the fact that both $E_1$ and $E_2$ have infinitely many $K$-rational points. The elliptic fibrations that play the role of $\pi_1$ and $\pi_2$ in Proposition \ref{exampleprop} are still constructed from conic bundles on the projective plane, in a very similar manner. In this case, however, instead of there being "no constant diramation points" there is "exactly one constant diramation point" for both fibrations.}to prove the HP for $X'_{\lambda}(f_1,f_2)$, when $\lambda=1$, and $f_1, f_2$ are as in \ref{casoparticolarekummer}, if the roots of $f_1$ and $f_2$ are all in the base field $K$, and the elliptic curves $E_1$ and $E_2$ (defined as in Remark \ref{casoparticolarekummer}) have infinitely many $K$-rational points. Corvaja and Zannier have suggested in \cite{articoloHP} that the HP holds for these surfaces.
+\end{remark}
+%Let us now verify that the two fibrations defined by $\pi_1,\pi_2$ on the surface $X$ satisfy condition \ref{genericramification}.
+
+\bibliographystyle{spmpsci}      % mathematics and physical sciences
+\bibliography{Non_rational_HP}
+
+
+\end{document}

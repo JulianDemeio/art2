@@ -1,0 +1,67 @@
+\begin{thebibliography}{VdDCH98}
+
+\bibitem[Bea96]{beauville}
+A.~Beauville.
+\newblock {\em Complex Algebraic Surfaces}.
+\newblock London Mathematical Society student texts. Cambridge University
+  Press, 1996.
+
+\bibitem[BW14]{ominimal}
+F.~Barroero and M.~Widmer.
+\newblock Counting lattice points and o-minimal structures.
+\newblock {\em International Mathematics Research Notices},
+  2014(18):4932--4957, 2014.
+
+\bibitem[CMZ17]{bettitorsion}
+Pietro Corvaja, David Masser, and Umberto Zannier.
+\newblock Torsion hypersurfaces on abelian schemes and betti coordinates.
+\newblock {\em Mathematische Annalen}, Mar 2017.
+
+\bibitem[DM17]{demarcomavraki}
+L.~{DeMarco} and N.~{Myrto Mavraki}.
+\newblock {Variation of canonical height and equidistribution}.
+\newblock {\em ArXiv e-prints}, January 2017.
+
+\bibitem[JS17]{garethschmidt}
+G.~{Jones} and H.~{Schmidt}.
+\newblock {Pfaffian definitions of Weierstrass elliptic functions}.
+\newblock {\em ArXiv e-prints}, September 2017.
+
+\bibitem[Ser13]{SerreMW}
+J.P. Serre.
+\newblock {\em Lectures on the Mordell-Weil Theorem}.
+\newblock Aspects of Mathematics. Vieweg+Teubner Verlag, 2013.
+
+\bibitem[Sil86]{silverman}
+J.H. Silverman.
+\newblock {\em The Arithmetic of Elliptic Curves}.
+\newblock Applications of Mathematics. 1986.
+
+\bibitem[Sil94]{silverman1994advanced}
+J.H. Silverman.
+\newblock {\em Advanced topics in the arithmetic of elliptic curves}.
+\newblock Graduate texts in mathematics. Springer-Verlag, 1994.
+
+\bibitem[SS09]{ellipticsurfaces}
+M.~{Schuett} and T.~{Shioda}.
+\newblock {Elliptic Surfaces}.
+\newblock {\em ArXiv e-prints}, July 2009.
+
+\bibitem[Tat83]{Tate}
+J.~Tate.
+\newblock Variation of the canonical height of a point depending on a
+  parameter.
+\newblock {\em American Journal of Mathematics}, 105(1):287--294, 1983.
+
+\bibitem[VdDCH98]{tametopology}
+L.~Van~den Dries, J.W. Cassels, and N.J. Hitchin.
+\newblock {\em Tame Topology and O-minimal Structures}.
+\newblock 150 184. Cambridge University Press, 1998.
+
+\bibitem[ZA15]{LectureNotesZannier}
+U.~Zannier and F.~Amoroso.
+\newblock {\em Lecture Notes on Diophantine Analysis}.
+\newblock Publications of the Scuola Normale Superiore. Scuola Normale
+  Superiore, 2015.
+
+\end{thebibliography}

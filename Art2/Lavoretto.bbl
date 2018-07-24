@@ -1,0 +1,50 @@
+\begin{thebibliography}{VdDCH98}
+
+\bibitem[Bea96]{beauville}
+A.~Beauville.
+\newblock {\em Complex Algebraic Surfaces}.
+\newblock London Mathematical Society student texts. Cambridge University
+  Press, 1996.
+
+\bibitem[BSW13]{SerreMW}
+M.L. Brown, J.P. Serre, and M.~Waldschmidt.
+\newblock {\em Lectures on the Mordell-Weil Theorem}.
+\newblock Aspects of Mathematics. Vieweg+Teubner Verlag, 2013.
+
+\bibitem[BW14]{ominimal}
+F.~Barroero and M.~Widmer.
+\newblock Counting lattice points and o-minimal structures.
+\newblock {\em International Mathematics Research Notices},
+  2014(18):4932--4957, 2014.
+
+\bibitem[CMZ17]{bettitorsion}
+Pietro Corvaja, David Masser, and Umberto Zannier.
+\newblock Torsion hypersurfaces on abelian schemes and betti coordinates.
+\newblock {\em Mathematische Annalen}, Mar 2017.
+
+\bibitem[DM17]{demarcomavraki}
+L.~{DeMarco} and N.~{Myrto Mavraki}.
+\newblock {Variation of canonical height and equidistribution}.
+\newblock {\em ArXiv e-prints}, January 2017.
+
+\bibitem[JS17]{garethschmidt}
+G.~{Jones} and H.~{Schmidt}.
+\newblock {Pfaffian definitions of Weierstrass elliptic functions}.
+\newblock {\em ArXiv e-prints}, September 2017.
+
+\bibitem[Sil94]{silverman1994advanced}
+J.H. Silverman.
+\newblock {\em Advanced topics in the arithmetic of elliptic curves}.
+\newblock Graduate texts in mathematics. Springer-Verlag, 1994.
+
+\bibitem[SS09]{ellipticsurfaces}
+M.~{Schuett} and T.~{Shioda}.
+\newblock {Elliptic Surfaces}.
+\newblock {\em ArXiv e-prints}, July 2009.
+
+\bibitem[VdDCH98]{tametopology}
+L.~Van~den Dries, J.W. Cassels, and N.J. Hitchin.
+\newblock {\em Tame Topology and O-minimal Structures}.
+\newblock 150 184. Cambridge University Press, 1998.
+
+\end{thebibliography}

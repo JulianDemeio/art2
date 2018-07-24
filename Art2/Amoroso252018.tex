@@ -1,0 +1,31 @@
+\begin{theorem}[Dobrowolski 77]\label{Dobrowolski77}
+	\begin{equation}
+		h(\alpha)\geq \frac{C}{d} cdot \left(\frac{\log \log d}{\log d}\right)^3 \quot d \geq 3
+	\end{equation}
+\end{theorem}
+\begin{proof}
+	\begin{observation}\label{oss1}
+		Sia $\alpha \in \bar{Z}$, $\alpha \notin \sqrt{1}$. Esiste $v \nmid \infty$, $\abs{\alpha}_v>1$, tale che:
+		\[
+		h(\alpha)\geq \frac{n_v\log \abs{\alpha}_v}{d}\geq \frac{\log p}{d} \geq \frac{\log 2}{d}.
+		\]
+	\end{observation}
+	\begin{observation}\label{oss2}
+	Sia $F \in \Z[X]$, nullo in $\alpha$ con molteplicità $\geq T$. Allora $\forall p, \ \forall v \mid p, \ \abs{F(\alpha^p)}_v \leq p^{-T}$.
+	\end{observation}
+	Supponiamo $\deg F \leq L$ e $F(\alpha^p) \neq 0$. Allora vale:
+	\[
+	1=\prod_v\abs{F(\alpha^p)}^{n_v/d}\leq \prod_{v \mid \infty}\abs{F(\alpha^p)}^{n_v/d}\prod_{v \mid p} \abs{F(\alpha^p)}^{n_v/d}.
+	\]
+	Per $v \mid \infty$, si ha $\abs{F(\alpha^p)} \leq \abs{F}_1\max(1,\abs{\alpha})^{pL}$. Per $v \mid p$, $\abs{F(\alpha^p)}\leq p^{-T}$. Inoltre, $\sum_{v \mid \infty} \frac{n_v}{d}=1$, e lo stesso vale per $v \mid p$. Quindi:
+	\[
+	1 \leq \abs{F}_1\cdot H(\alpha)^{pL}p^{-T},
+	\]
+	\[
+	h(\alpha) \geq \frac{T \log p - \log \abs{F}_1}{pL}.
+	\]
+	Usando il Lemma di Siegel (vedi dopo), si ottiene una $F \in \Z[X], \ F \neq 0$ tale che $\log \abs{F}_1 \leq (1+dT^2/L)\log L+dTh(\alpha)$. Scelgo $L \approx dT^2$, e suppongo $h(\alpha) << \frac{\log d}{dT}$ e quindi $\log L << \log d$. Allora ottengo una $F$ che si annulla con $\log \abs{F}_1 \leq \log d$. Ora cerchiamo di mostrare che, sotto le nostre scelte, $F(\alpha^p)$ è costretto ad annullarsi, per infiniti $p$, al che si conclude. In particolare, si $\log d \leq p \leq N$. Se $F(\alpha^p) \neq 0$, allora $1 \leq p^{-T}\abs{F}_1H(\alpha)^{pL}$. Quindi $T \log p << \log d+ pL h(\alpha)$, e $T \log \log d << \log d +NLh(\alpha)$. Ora suppongo $h(\alpha)<\frac{\log d}{NL}$ e scelgo $T=C\frac{\log d}{\log \log d}$. Ora ho un assurdo, e quindi $F(\alpha^p)=0$. Da cui, ho vinto.
+\end{proof}
+\begin{lemma}[Siegel's Lemma]
+	....
+\end{lemma}

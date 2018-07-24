@@ -1,0 +1,184 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{glaudo_en_pkg}
+
+\DeclareMathOperator{\ord}{ord}
+
+\begin{document}
+
+Let $\pi:E \rightarrow \P_1$ be the Legendre scheme, i.e. the elliptic surface associated to the following elliptic curve, defined over the function field $\C(\lambda)$ of $\P_1$:
+\[
+y^2=x(x-1)(x-\lambda).
+\]
+
+\begin{theorem}\label{Prop:equality}
+	Let $\sigma:B \rightarrow E_B \defeq E\times_{(\pi,r)}B$ be an algebraic section of $\pi$, where $r:B \rightarrow \P_1$ is a finite morphism, and $B$ is a smooth complete complex curve. Let $S=\{0,1,\infty\} \subset \P_1(\C)$ denote the points of bad reduction for $\pi$. Then the following equality holds:
+	\begin{equation}\label{soughtequality}
+	\hat{h}(\sigma) = \int_{B \setminus r^{-1}(S)} \sigma^*(\de \beta_1 \wedge \de \beta_2),
+	\end{equation}
+	where $(\beta_1,\beta_2)$ is a (local branch) of the Betti map (as defined in \cite[Section 1.1]{bettitorsion}, following the notation introduced by D. Bertrand) on $E$. \footnote{We notice that, although for the Betti map $(\beta_1,\beta_2)$ to be well-defined, one needs to restrict oneself to a simply connected fundamental domain, the $(1,1)$-form $\de \beta_1 \wedge \de \beta_2$ is well-defined on $E_B \setminus r^{-1}(\mathcal{S})$.}
+\end{theorem}
+
+Before coming to the proof, we recall the following Lemma, of which a proof can be found in \cite{ominimal}:
+\begin{lemma}\label{ominimalmeasure}
+	Let $X \subset \R^k$ be a bounded definable subset of $\R^k$ in an o-minimal theory. Let, for each $n>0$:
+	\[
+	\alpha_n \defeq \left\{\left(\frac{a_1}{n},\dots,\frac{a_k}{n} \right)\in X: \ a_1,\dots, a_k \in \Z \right\}.
+	\]
+	Then, the limit $\lim_{n \to \infty} n^{-k}\alpha_n$ exists and it is equal to $\mu(X)$, the Lebesgue measure of $X$.
+\end{lemma}
+
+
+\begin{proof}[Proof of Theorem \ref{Prop:equality}]
+	Let us first consider the case where $\sigma$ is torsion. In this case, left and right hand side of (\ref{soughtequality}) are both equal to $0$, hence there is nothing to prove. 
+	
+	We restrict now to the case where $\sigma$ is not torsion, and consider, for each $n \geq 1$, the following quantity:
+	\begin{equation}\label{targetorsion}
+		A_n \defeq \# \{t \in B(\C)\setminus r^{-1}(S): \sigma(t) \text{ is }n-\text{torsion in } E_t\}.
+	\end{equation}
+	We notice that, since $\sigma$ is not torsion, this quantity is finite for each $n \geq 1$.
+	We claim the following (which obviously implies the thesis):
+	\begin{enumerate}
+		\item The limit $\lim_{n \to \infty}\frac{A_n}{n^2}$ exists, is finite, and $\lim_{n \to \infty}\frac{A_n}{n^2}=\hat{h}(\sigma)$;
+		\item The limit $\lim_{n \to \infty}\frac{A_n}{n^2}=\int_{E \setminus r^{-1}(S)} \sigma^*(\de \beta_1 \wedge \de \beta_2)$.
+	\end{enumerate}
+	Let us first prove $(1)$. We know that (see e.g. \cite[Sections 2,3]{SerreMW}):
+	\[
+	\hat{h}(\sigma) =\lim_{n \to \infty} \frac{<n \sigma, O>}{n^2},
+	\] 
+	where $n\sigma$ denotes, with a slight abuse of notation, the graph of the section of $n \sigma$, $O$ denotes the zero section of $\pi$, and $<n \sigma, O>$ denotes the intersection product in a smooth proper model of $E_B$. We write:
+	\[
+	<n \sigma, O>=A_n+\delta_n+s_n,
+	\]
+	where $s_n$ denotes the intersection of $n \sigma$ and $O$ on the singular fibers of $\pi:E_B \rightarrow B$, and $\delta_n$ is a correction term that keeps track of the intersection that happens with multiplicity greater than $1$. I.e.:
+	\[
+	\delta_n=\sum_{t \in B\setminus r^{-1}(S)} (\ord_t(n\sigma)-1),
+	\]
+	where $\ord_t(n\sigma)$ denotes the multiplicity of intersection of $n\sigma$ and $O$ at $t$. 
+	We will now prove that $\delta_n+s_n=O(1)$, as $n \to \infty$. The fact that $s_n=O(1)$ follows from an analysis of the local intersection numbers on the singular fibers using the formal group law structure[...].
+	
+	We prove now that $\delta_n$ is uniformly bounded (for any $n>0$). We notice that, in order for the intersection of $n \sigma$ and $O$ to be of order greater than $1$ at a certain point $t \in B$, the differential of (a local branch of) the Betti map $(b_1,b_2)\circ \sigma$ would have to be $0$ at the point $t$. As proven by P. Corvaja and U. Zannier in [...], this happens only for a finite amount of base points $t$ in the base. We denote them by $t_1,\dots, t_k$. For each $i=1,\dots, k$, let $\lambda_i$ denote a uniformizer for $t_i \in \P_1(\C)$, and let $\rho^i_1, \rho^i_2$ denote a local choice (in a neighbourhood of $t_i$) of periods for the elliptic logarithm (see e.g. \cite[Section 1.1]{bettitorsion}). We have then that (by standard intersection theory on complex surfaces, see e.g. \cite[Chapter I]{beauville}):
+	\begin{equation}\label{multiplicity}
+	\ord_{t_i}(n\sigma)=\dim_{\C} \faktor{\C\{\lambda_i\}}{(n\sigma(\lambda_i)-nb_1\rho^i_1(\lambda_i)-nb_2\rho^i_2(\lambda_i))}, 
+	\end{equation}
+	where $\C\{\lambda_i\}$ denotes the ring of locally analytic functions in the variable $\lambda_i$, and $b_1, b_2 \in \C$ are defined through the following condition: \[\sigma(t_i)=b_1\rho^i_1(t_i)+b_2\rho^i_2(t_i).\]	
+	Since the ideal $(n\sigma(\lambda_i)-nb_1\rho^i_1(\lambda_i)-nb_2\rho^i_2(\lambda_i)) \subset \C\{\lambda\}$ does not depend on $n>0$, we have that the right hand side of (\ref{multiplicity}) does not depend on $n>0$, and we denote this quantity by $R_i$. As an immediate consequence of the above argument, we have that:
+	\[
+	\delta_n \leq R_1 + \dots + R_k - k,
+	\] 
+	from which we conclude that $\delta_n =O(1)=o(n^2)$, thus proving point $(1)$.
+	
+	We prove now point $(2)$. We use the fact that the Betti map is (locally) definable and bounded (by definable, we will always mean definable in $(\R_{an,exp})$). Namely, it is proven in \cite[Section 10]{garethschmidt} that there exists a (definable) partition $B\setminus r^{-1}(S)=Y_1 \cup \dots Y_l$, and, on each $Y_j$ there exists a well defined branch of the Betti map, which we will denote by $B^j=(\beta^j_1,\beta^j_2)\circ \sigma: Y_j \rightarrow \R^2$, such that $B_j$ is definable, and in \cite[Proposition 4]{garethschmidt} that it is bounded. Let us consider now, for each $j=1,\dots, l$, the following definable set in $\R^2 \times \R^2$:
+	\[
+	X_j\defeq \{(y,t) \in \R^2 \times \R^2: t \in Y_j \text{ and } y=B_j(t)\},
+	\]
+	i.e. $X_j$ is the transpose of the graph of $B_j$. Applying Hardt's Theorem (\cite[Theorem 9.1.2]{tametopology}) to $X_j$, we know that there exists a finite partition of $\R^2$, say $A_j^1\cup\dots \cup A_j^{d(j)}=\R^2$, such that $X_j$ is definably trivial over each $A_j^m$.  We recall that this means that, for each $m \leq d(j)$, there exists a definable set $F_j^m$, and a (definable) isomorphism $h_{A_j^m}:X_j\cap (A_j^m\times \R^2)\rightarrow A_j^m\times F_j^m$, that commutes with the projection to $A_j^m$. Morover, since the Betti map is bounded on each $Y_j$, we may assume that, for each $m \leq d(j)$, either $A_j^m$ is bounded, or $X_j\cap (A_j^m\times \R^2)=\emptyset$. We define now, for each $j=1,\dots, l$, $m \leq d(j)$:
+	\begin{equation}
+		f_j^m\defeq \#F_j^m
+	\end{equation}
+	We notice that $f_i^j$ is always finite. In fact, this is a direct consequence of the fact that the fibers of the Betti map $B_j$ are isolated points (see \cite[Proposition 1.1]{bettitorsion}).
+	Then, the following equality holds:
+	\begin{equation}\label{measure}
+	\sum_{m \leq d(j)} f_{j}^m\mu(A_j^m)=\int_{B\setminus r^{-1}(S)} \sigma^*(\de \beta_1 \wedge \de \beta_2).
+	\end{equation}
+	In fact, notice that both left and right hand side of (\ref{measure}) are equal to the measure of the graph of the section $\sigma:\P_1(\C)\setminus S\rightarrow E\setminus \mathcal{S}_B$ %(which we denote, with a slight abuse of notation, by $\sigma \subset E\setminus \mathcal{S}$)
+	, given by the integration of the restriction of the $(1,1)$-form $\de \beta_1 \wedge \de \beta_2 \in \Omega^2{E \setminus \mathcal{S}_B}$.
+	%(which is, as we noticed earlier, indipendent of the choise of the branch of the Betti map, and, hence, well-defined on $E \setminus \mathcal{S}_B$).
+	
+	We notice now that, if $t \in \P_1(\C)\setminus S$, $\sigma(t) \in E_t$ is $n$-torsion if and only if the Betti coordinates $(\beta_1(\sigma(t)),\beta_2(\sigma(t)))$ are rational with denominator dividing $n$. Hence, the following equality holds, for each $n>0$:
+	\begin{equation}\label{counting}
+		A_n=\sum_{m \leq d(j)}f_{j}^m\alpha_{n,j}^m,
+	\end{equation}
+	where:
+	\[
+	\alpha_{n,j}^m\defeq \left\{\left(\frac{a}{n},\frac{b}{n}\right)\in A_j^m: \ a,b \in \Z\right\}.
+	\]
+	Hence:
+	\[
+		\frac{A_n}{n^2}=\sum_{m \leq d(j)}\frac{\alpha_{n,j}^m}{n^2},
+	\]
+	Letting $n \to \infty$, the thesis follows from (\ref{measure}), (\ref{counting}) and Lemma \ref{ominimalmeasure}.
+\end{proof}
+
+
+\begin{corollary}
+	Let $\sigma:B \rightarrow E_B$ denote a section of the elliptic surface $E_B \rightarrow B$. Then the integral $\int_{B \setminus r^{-1}(S)} \sigma^*(\de \beta_1 \wedge \de \beta_2)$ has a rational value.
+\end{corollary}
+\begin{proof}
+	We know by \cite[Section 11.8]{ellipticsurfaces} that $\hat{h}(\sigma) \in \Q$. Hence, the thesis is an immediate consequence of Proposition \ref{Prop:equality}.
+\end{proof}
+
+We give here another expression of the $(1,1)$-form $\de \beta_1 \wedge \de \beta_2 \in \Omega^2(E \setminus \mathcal{S})$ that might be more suitable for calculations. To fix some notation, we assume that a local choice of periods $\rho_1(\lambda),\rho_2(\lambda)$, such that $<\rho_1(\lambda),\rho_2(\lambda)>=\Lambda_{\lambda}$, where the latter denotes the unique lattice in $\C$ corresponding to the elliptic curve $E_{\lambda}$, defined through the Weierstrass form $y^2=x(x-1)(x-\lambda)$. Let $d(\lambda)\defeq\rho_1(\lambda)\overline{\rho_2(\lambda)}-\rho_2(\lambda)\overline{\rho_1(\lambda)}=2iV(\lambda)$, where $V(\lambda)$ denotes the (oriented) area of the fundamental domain of $\Lambda_{\lambda}$. Let $\eta_{\lambda}(\zeta)$ denote the extension to $\C$ of the function $\eta$ (as defined in \cite[VI.3.1]{silverman1994advanced}), defined on the lattice $\Lambda_{\lambda}$. Then, the following equality holds:
+\begin{equation}\label{riscrittura}
+	\de \beta_1(\lambda) \wedge \de \beta_2(\lambda)=\frac{1}{d(\lambda)}\left(\de z \wedge \de \bar{z}+\frac{1}{2\lambda}(\eta \de \lambda \wedge \de \bar{z}+\bar{\eta}\de{z}\wedge\de{\bar{\lambda}})+\frac{1}{4\lambda^2}\de \lambda \wedge \de \bar{\lambda}\right).
+\end{equation}
+
+%\begin{equation}\label{riscrittura}
+%	\de b_1 \wedge \de b_2=\frac{1}{d}(\de z \wedge \de \bar{z}+\beta_1^2 \de \rho_1 \wedge \de \bar{\rho_1}
+%										+\beta_1\beta_2 \de \rho_1 \wedge \de \bar{\rho_2}+\beta_1\beta_2 \de \rho_2 \wedge \de \bar{\rho_1}
+%										+\beta_2^2 \de \rho_2 \wedge \de \bar{\rho_2}+)
+%\end{equation}
+
+\begin{example}\label{explicitexample}
+	Let us do an explicit computation of the terms of \ref{soughtequality}, in the case of a specific section, for instance:
+	\[
+	\sigma(\lambda)=(2,\sqrt{2(2-\lambda)}).
+	\]
+	This section is not defined over the base curve $\P_1$. It is, however, well defined as a section of the elliptic surface $E_B \defeq E \times_{(\pi,\phi)}B \rightarrow B$, where $B \cong \P_1$, and $\phi(t)=t^2+2$. 
+	
+	One can compute $\hat{h}(\sigma)$ explicitly, by using the intersection product on a proper regular model of $E_B$ (see \cite[Section 11.8]{ellipticsurfaces})\footnote{Our normalization for the height function differs by a multiplicative factor of $\frac{1}{2}$ from that of \cite{ellipticsurfaces}.}. A simple application of Tate's algorithm reveals that the fibration $\pi:E_B \rightarrow B$ has $5$ singular fibers, four of which are of type $I_2$ (the ones over $\lambda= 0,1$) and one of type $I_4$ (the one over $\lambda=\infty$). Looking at the intersection of the section $\sigma$ with the singular fibers reveals that the canonical height $\hat{h}(\sigma)=\frac{11}{8}$.
+	
+	Using \ref{riscrittura}, the $(1,1)$-form $\sigma^*(\de \beta_1 \wedge \de \beta_2)$ is equal to the following:
+	\begin{gather}\label{Expr:11formexample}
+	\de \beta_1(\lambda) \wedge \de \beta_2(\lambda)=\\ \frac{1}{d(\lambda)}\left(\de z(\lambda) \wedge \de \overline{z(\lambda)}+\frac{1}{2\lambda}(\eta \de \lambda \wedge \de \overline{z(\lambda)}+\overline{\eta}\de{z(\lambda)}\wedge\de{\overline{\lambda}})+\frac{1}{4\lambda^2}\de \lambda \wedge \de \overline{\lambda}\right).
+	\end{gather}
+	Here $z(\lambda)=\int_{\infty}^{2}dx/\sqrt{x(x-1)(x-\lambda)}$ (the determination chosen for the $\sqrt{}$ is irrelevant). 
+	Hence, we obtain the following integral identity from Theorem \ref{Prop:equality}:
+	\[
+	\int_{\lambda \in \C} \de \beta_1(\lambda) \wedge \de \beta_2(\lambda) = \frac{1}{2}\footnote{The coefficient $\frac{1}{2}$ is needed here because we should actually integrate not on the parameter $\lambda$, but on the parameter $\mu\defeq\sqrt{2-\lambda}$.}\cdot \frac{11}{8}=\frac{11}{16}.
+	\]
+\end{example}
+
+\paragraph{Comparison with a measure coming from dynamics}
+
+Let us cite the following result of Laura de Marco and Myrto Mavraki from \cite[Section 3]{demarcomavraki}:
+\begin{theorem}\label{Theo:demarcomavraki}
+	Let $\pi:E \rightarrow B$ be an elliptic surface and $P : B \rightarrow E$ a non-torsion section, both defined over $\Q$. Let $S \subset E$ be the union of the finitely many singular fibers in $E$. There is a positive, closed $(1,1)$-current $T$ on $E(\C) \setminus S$ with locally continuous potentials so that $\restricts{T}{E_t}$ is the Haar measure on each smooth fiber, and $P^*T$ is equal to a measure $\mu_{P}$, that satisfy the following property. For any infinite non-repeating sequence of $t_n \in B(\bar{\Q})$, such that $\hat{h}_{E_{t_n}}(P_{t_n}) \rightarrow 0$ as $n \to \infty$, the discrete measures
+	\[
+	\frac{1}{\#\Gal(\bar{\Q}/\Q)t_n}\sum_{t \in \Gal(\bar{\Q}/\Q)t_n}\delta_{t_n}
+	\]
+	converge weakly on $B(\C)$ to $\mu_P$.
+\end{theorem}
+
+%The $(1,1)$-current $T$ in \ref{Theo:demarcomavraki} has first been introduced by Laura de Marco and Myrto Mavraki in \cite[Section 3]{demarcomavraki} (?). 
+The restriction of the current $T$ to the open set $E \setminus (\mathcal{S} \cup O)$ (where we are denoting by $O$, with a slight abuse of notation, the image of the zero section of $\pi:E \rightarrow B$), can be written down explicitly as follows:
+\begin{equation}\label{Expr:11current}
+	T=\de \de^c {\lambda},
+\end{equation}
+where $\lambda$ denotes the local (archimedean) height function. We recall that the following formula holds \cite[p. 466]{silverman1994advanced}:
+\begin{equation}\label{Expr:altezzalocale}
+	\lambda=-\log \abs{e^{-\frac{1}{2}z\eta_{l}(z)}\sigma_{l}(z)\Delta(\Lambda_{l})^{\frac{1}{12}}}.
+\end{equation}
+Here $\Lambda_{l}$ denotes a lattice in $\C$ such that $\C/\Lambda_{l} \cong E_{l} \defeq \pi^{-1}(l)$, $z$ denotes the complex variable of $\C/\Lambda_{l}$ and $\eta_{l}$ and $\sigma_{l}$ indicate the elliptic functions $\eta$ and, resp., $\sigma$ (as defined in \cite[VI.3.1,I.5.4]{silverman1994advanced}) associated to the lattice $\Lambda_{l}$. Since $\sigma_{l}(z)\Delta(\Lambda_{l})^{\frac{1}{12}}$ is a holomorphic function in both variables $l$ and $z$, this gives the following expression for $T$:
+\begin{equation}\label{Expr:11current2}
+	T=\frac{1}{2}\de \de^c(\Re (z\eta_{\lambda}(z))).
+\end{equation}
+We expect that the current $T$ is equal to $(1,1)$-current defined by the $(1,1)$-form $\de \beta_1 \wedge \de \beta_2$ on $E \setminus \mathcal{S}$. In fact, we know that both currents restrict to the Haar measure on the fibers.
+
+...
+If one chooses local coordinates $z, \lambda$ on the surface $E$, such that $\lambda$ is just a (local) coordinate on the base, and $z$ is the complex coordinate on the fiber (i.e. the value, up to periods, of the elliptic integral on the fibers), then one can (locally) decompose every $(1,1)$-form in the following way:
+\[
+\omega=\alpha_{z,\bar{z}}\de z \wedge \de \bar{z} +\alpha_{\bar{z},\lambda}\de \bar{z} \wedge \de \lambda+\alpha_{z,\bar{\lambda}}\de z \wedge \de \bar{\lambda}+\alpha_{\lambda,\bar{\lambda}}\de \lambda \wedge \de \bar{\lambda}.
+\]
+If we let $\omega$ be $(1,1)$-form $T- \de \beta_1 \wedge \de \beta_2$, we know that the coefficient $\alpha_{z,\bar{z}}$ is $0$ (since it is so when restricted to the fibers). One might expect that the remaining pieces are, for instance, not closed for the operator $\de$ or $\de^c$ (while, $T- \de \beta_1 \wedge \de \beta_2$ is so).
+...
+
+%When restricting the current $T$ to a section $\sigma:B \rightarrow E_B$, one gets a $(1,1)$-current on $E_B\setminus \mathcal{S}$, i.e. a measure (since $E_B$ is a complex surface). The restriction of this measure to $B \setminus (S \cup \sigma^{-1}(O))$ can be explicitly computed using \ref{Expr:11current}, which yields:
+%\begin{equation}\label{Expr:measuredmm}
+%	contenuto...
+%\end{equation}
+
+\bibliographystyle{alpha}
+\bibliography{Lavoretto}
+
+
+\end{document}

@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{glaudo_en_pkg}
+
+\newcommand{\P}{\mathcal{P}}
+
+\begin{document}
+\begin{theorem}[Amoroso-Dvornichich 2000]\label{AmorosoDvornichich00}
+	For each $ \alpha \in \Q^{ab}$, $\alpha \notin \sqrt{1}$, then:
+	\[
+	h(\alpha)\geq \frac{\log 5}{12}.
+	\]
+\end{theorem}
+\begin{observation}
+	$\exists \alpha \in \Q^{ab}$ such that $h(\alpha)=\frac{\log 7}{12}$.
+\end{observation}
+\begin{observation}
+	Non si ha una minimazione uniforme dal basso per le altezze sui campi CM.
+\end{observation}
+\begin{remark}
+	Se $K$ è CM, $K \neq \Q$, $K=\Q(\alpha)$, allora $\Q(\alpha^{1/n})$ è ancora CM.
+\end{remark}
+\begin{proof}[Proof of Theorem \ref{AmorosoDvornichich00}]
+	Per Kronecker-Weber possiamo supporre $L=\Q(\zeta_n)$. Sia $\alpha \in L^*$ e $p$ un primo piccolo che fattorizza come $(\P_1\cdot \P_r)^e$. 
+	
+	Supponiamo per ora $p \nmid n$, i.e. $p$ non ramifica.
+	
+	Applicheremo la formula del prodotto a $x=\alpha^p-\sigma \alpha$, dove $\sigma$ è il Frobenius di $\P_j$ (che è lo stesso per ogni $j$, essendo $L/K$ abeliana). Abbiamo $x \in p \mathcal{O}_L$. Quindi otteniamo (\underline{\textbf{La strada è la stessa di ieri.}}):
+	\[
+	\abs{x}_v=
+	\begin{cases}
+	2 \Delta_v \ \text{if } v \mid \infty,\\
+	\Delta_v \ \text{if } v \nmid \infty,\\
+	\frac{1}{p}\Delta_v \ \text{if } v \mid p.
+	\end{cases}
+	\]
+	Qui $\Delta_v\defeq\Delta_{v,p,\alpha}=\max(1,\abs{\alpha}_v)^p\max(1,\abs{\sigma \alpha}_v)$. Dalla FdP viene, as usual:
+	\[
+	1 \leq 2p^{-1}\prod_v \Delta_v=2p^{-1}H(\alpha)^pH(\sigma \alpha)=H(\alpha)^{p+1}.
+	\]
+	Quindi $h(\alpha)\geq \frac{\log (p/2)}{p+1}$.
+	
+	Supponiamo ora invece che $p \mid n$, i.e. $p$ ramifica.
+	
+	Allora vale che, per $\alpha \in \mathcal{O}_L$ $\alpha^p \cong \sigma \alpha^p \ (\mod p\mathcal{O}_L)$. Ora pongo $x=\alpha^p-\sigma \alpha^p$. Se abbiamo $x=0$ (\underline{Altrimenti la FdP va a farsi benedire}), allora $\alpha ^p \in \Q(\zeta_{n/p})$. In questo caso, abbiamo che esiste una radice dell'unità $\eta$ tale che $\eta \alpha \in \Q(\zeta_{n/p})$, e ora si fa per induzione.\footnote{$h(\eta \alpha)=h(\alpha)$ in quanto $\eta$ è "di torsione".}. In questo caso otteniamo $h(\alpha) \geq \frac{\log (p/2)}{2p}$. Ora scelgo $p=3$.
+	
+	Invece nel caso di $L$ estensione abeliana di un campo di numeri $K$, si fa lo stesso conto nel caso non-ramificato, e un conto usando (facilmente) la teoria della ramificazione nel caso di ramificazione.
+\end{proof}
+
+\begin{remark}
+	Nel caso di $\Q(E_{tor})$, quando la curva non ha CM, si usa l'esistenza di $\infty$ primi supersingolari, per i quali il Frobenius è centrale, e quindi, se non sono ramificati, la dim è la stessa. Se, invece, sono ramificati si usa sempre una versione della teoria della ramificazione per curve ellittiche.
+\end{remark}
+
+\begin{question}[Problema di Lang]
+	Caratterizzare i polinomi $f \in \bar{Q}[x,y]$ irriducibili che hanno $\infty$ zeri $(\alpha,\beta)$, con $\alpha, \beta \in \sqrt{1}$.
+\end{question}
+
+\begin{theorem}[Liadet?]
+	$f \in \bar{Q}[x,y]$ risponde positivamente al problema di Lang sse $f(x,y)=x^ny^m-a$ o $f(x,y)=x^n-ay^m$, con $a \in \sqrt{1}$.
+\end{theorem}
+\begin{proof}
+	Prendo uno zero di $f$ della forma $\zeta_N^r$, $\zeta_N^s$ con $(r,s,N)=1$. Ora ci faccio annullare sopra una cosa di grado basso. Namely, coi cassetti, trovo una $g \in \Q[x^{\pm 1},y^{\pm 1}]$ che si annulla, con $\deg g \leq 2\sqrt{N}$. Ora, da Bezout+grado dell'estensione $[K(\zeta_N):K$, si conclude.
+\end{proof}
+
+\end{document}
+
